@@ -11,22 +11,20 @@ todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
             if (!newTodo.length) {
 			return;
 		}
-		todos.push({
+		$scope.todos.push({
 			title: newTodo,
             desc: $scope.newDesc,
 			completed: false
 		});
 		$scope.newTodo = '';
+        $scope.Desc = '';
 	};
 
 	$scope.editTodo = function (todo) {
         todo.editing = true;
-
 	};
 
 	$scope.doneEditing = function (todo) {
-		todo.title = todo.title;
-
 		if (!todo.title) {
 			$scope.removeTodo(todo);
 		}
