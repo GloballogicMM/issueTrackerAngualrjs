@@ -16,8 +16,8 @@ todo.factory('todoStorage', function () {
 		get: function () {
 			return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
 		},
-		put: function (title, desc, date, estimate, status) {
-			localStorage.setItem(STORAGE_ID, JSON.stringify(new History(title, desc, date, estimate, status)));
+		put: function (todo) {
+			localStorage.setItem(STORAGE_ID, JSON.stringify(todo));
         }
 
 	};

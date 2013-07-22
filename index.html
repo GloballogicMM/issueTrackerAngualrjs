@@ -18,6 +18,13 @@
                     <button class="btn">Blocked</button>
                 </div>
             </nav>
+            <header id="header">
+                -        <form id="todo-form" ng-submit="addTodo()">
+                -          <input ng-model="newTodo" autofocus>
+                -                    <textarea ng-model="newDesc">Add your </textarea>
+                -                    <button ng-click="addTodo()">Add new Todo</button>
+                -        </form>
+                -      </header>
 			<section ng-show="todos.length">
 				<ul>
 					<li ng-repeat="todo in todos">
@@ -30,6 +37,7 @@
                         <form ng-show="todo.editing" ng-submit="doneEditing(todo)">
 							<input ng-model="todo.title">
                             <textarea ng-model="todo.desc"></textarea>
+                            <button data-ng-click="doneEditing(todo)">apply</button>
 						</form>
 					</li>
 				</ul>
