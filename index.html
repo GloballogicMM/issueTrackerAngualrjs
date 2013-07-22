@@ -9,6 +9,7 @@
 			<header id="header">
 				<form id="todo-form" ng-submit="addTodo()">
 					<input ng-model="newTodo" autofocus>
+                    <button ng-click="addTodo()">Add new Todo</button>
 				</form>
 			</header>
 			<section ng-show="todos.length">
