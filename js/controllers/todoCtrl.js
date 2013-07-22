@@ -1,9 +1,9 @@
 todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
-	var todos = $scope.todos = todoStorage.getTitle();
+	var todos = $scope.todos = todoStorage.get();
 
     //if smth change in list then upload storage
 	$scope.$watch('todos', function () {
-		todoStorage.putTitle(todos);
+		todoStorage.put(todos);
 	}, true);
 
 	$scope.addTodo = function () {
@@ -22,9 +22,12 @@ todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
 
 	$scope.editTodo = function (todo) {
         $scope.editing = true;
+
 	};
 
 	$scope.doneEditing = function (todo) {
+		todo.title = todo.title;
+
 		if (!todo.title) {
 			$scope.removeTodo(todo);
 		}

@@ -20,7 +20,7 @@
                             <button ng-click="editTodo(todo)">Edit</button>
 							<button ng-click="removeTodo(todo)">del</button>
 						</div>
-                        <form ng-show="editing" ng-submit="doneEditing(todo)">
+                        <form ng-show="todo.editing" ng-submit="doneEditing(todo)">
 							<input ng-model="todo.title">
 						</form>
 					</li>
