@@ -1,12 +1,12 @@
 todo.factory('todoStorage', function () {
-	var STORAGE_ID = 'todos-angularjs';
+	var STORAGE_ID = 'todos-angularjs-title';
 
 	return {
-		get: function () {
+		getTitle: function () {
 			return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
 		},
 
-		put: function (todos) {
+		putTitle: function (todos) {
 			localStorage.setItem(STORAGE_ID, JSON.stringify(todos));
 		}
 	};

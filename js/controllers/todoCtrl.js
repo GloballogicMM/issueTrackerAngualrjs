@@ -1,9 +1,9 @@
 todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
-	var todos = $scope.todos = todoStorage.get();
+	var todos = $scope.todos = todoStorage.getTitle();
 
     //if smth change in list then upload storage
 	$scope.$watch('todos', function () {
-		todoStorage.put(todos);
+		todoStorage.putTitle(todos);
 	}, true);
 
 	$scope.addTodo = function () {
