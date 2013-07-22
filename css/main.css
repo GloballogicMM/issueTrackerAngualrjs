@@ -1,0 +1,18 @@
+#container {
+    margin: 10px auto;
+    width: 50%;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+aside {
+    float: right;
+}
+
+.btn {
+    padding: 5px;
+}

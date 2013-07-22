@@ -4,47 +4,32 @@
 		<meta charset="utf-8">
 		<title>Todo</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
 	</head>
 	<body>
-		<section ng-controller="TodoCtrl">
-			<nav>
+		<section id="container" class='clearfix' ng-controller="TodoCtrl">
+            <header><h3>Scrum calendar</h3></header>
+			<aside style='padding: 5px'>
                 <form class="navbar-search pull-left">
-                    <input type="text" class="search-query" placeholder="Search">
+                    <input type="text" class="search-query" placeholder="Search" ng-model="searchQuery">
                 </form>
-                <div class="btn-group">
-                    <button class="btn">Defined</button>
-                    <button class="btn">In progress</button>
-                    <button class="btn">Completed</button>
-                    <button class="btn">Blocked</button>
+                </br></br>
+                <div class="btn-group btn-group-vertical">
+                    <button class="btn btn-inverse btn-block">Defined</button>
+                    <button class="btn btn-warning btn-block">In progress</button>
+                    <button class="btn btn-success btn-block">Completed</button>
+                    <button class="btn btn-danger btn-block">Blocked</button>
                 </div>
-            </nav>
-            <header id="header">
-                <form id="todo-form" data-ng-submit="addTodo()">
-                    <input data-ng-model="newTodo" autofocus>
-                    <textarea data-ng-model="newDesc">Add your </textarea>
-                    <input type="text" data-ng-model="newDate">
-                    <button data-ng-click="addTodo()">Add new Todo</button>
-                </form>
-            </header>
-			<section ng-show="todos.length">
-				<ul>
-					<li ng-repeat="todo in todos">
-						<div class="view">
-							<label>{{todo.title}}</label>
-                            <p>{{todo.desc}}</p>
-                            <span>{{todo.date}}</span>
-                            <button ng-click="editTodo(todo)">Edit</button>
-							<button ng-click="removeTodo(todo)">del</button>
-						</div>
-                        <form ng-show="todo.editing" ng-submit="doneEditing(todo)">
-							<input ng-model="todo.title">
-                            <textarea ng-model="todo.desc"></textarea>
-                            <input type="date">
-                            <button data-ng-click="doneEditing(todo)">apply</button>
-						</form>
-					</li>
-				</ul>
-			</section>
+                </br></br>
+                <div>
+                    <ul class="unstyled" ng-repeat="user in users">
+                        <li class="btn">{{ user.name }}</li>
+                    </ul>
+                </div>
+            </aside>
+            <article>
+                <todo></todo>
+            </article>
 
 		</section>
 

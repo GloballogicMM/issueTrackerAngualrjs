@@ -1,0 +1,27 @@
+<header id="header">
+    <form id="todo-form" data-ng-submit="addTodo()">
+        <input data-ng-model="newTodo" autofocus>
+        <textarea data-ng-model="newDesc">Add your </textarea>
+        <input type="text" data-ng-model="newDate">
+        <button data-ng-click="addTodo()">Add new Todo</button>
+    </form>
+</header>
+<section ng-show="todos.length">
+    <ul>
+        <li ng-repeat="todo in todos">
+            <div class="view">
+                <label>{{todo.title}}</label>
+                <p>{{todo.desc}}</p>
+                <span>{{todo.date}}</span>
+                <button ng-click="editTodo(todo)">Edit</button>
+                <button ng-click="removeTodo(todo)">del</button>
+            </div>
+            <form ng-show="todo.editing" ng-submit="doneEditing(todo)">
+                <input ng-model="todo.title">
+                <textarea ng-model="todo.desc"></textarea>
+                <input type="date">
+                <button data-ng-click="doneEditing(todo)">apply</button>
+            </form>
+        </li>
+    </ul>
+</section>
