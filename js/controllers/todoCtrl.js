@@ -22,12 +22,9 @@ todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
 
 	$scope.editTodo = function (todo) {
         $scope.editing = true;
-
 	};
 
 	$scope.doneEditing = function (todo) {
-		todo.title = todo.title;
-
 		if (!todo.title) {
 			$scope.removeTodo(todo);
 		}
