@@ -25,20 +25,19 @@
                 </br></br>
                 <div>
                     <ul class="unstyled" ng-repeat="user in users">
-                        <li class="" ng-click="searchByUser(user.name)">{{ user.name }}</li>
+                        <li class="" ng-click="searchByUser($index)">{{ user.name }}</li>
                     </ul>
                 </div>
                 <button class="btn" ng-click="clearFilters()">Clear filters</button>
             </aside>
             <article>
-                <todo></todo>
-                <ul class="unstyled" ng-repeat="history in mockhistory | historyFilter: search">
-                    <li>
-                        <p>Title: {{ history.title }}</p>
-                        <p>Status: {{ history.status }}</p>
-                        <p>User: {{ history.user }}</p>
-                    </li>
-                </ul>
+                <div class="unstyled" ng-repeat="history in mockhistory | historyFilter: search">
+                    <div class="history {{ statuses[history.status]}}">
+                        <h4>{{ history.title }}</h4>
+                        <span class='estimate'>{{ history.estimate }}h</span>
+                        <p ng-repeat="index in history.user">{{ users[index].name }} </p>
+                    </div>
+                </div>
             </article>
 
 		</section>
