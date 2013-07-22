@@ -1,10 +1,6 @@
 todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
 	var todos = $scope.todos = todoStorage.get();
-    $scope.users = [
-        {name: 'Ivan Ivanov'},
-        {name: 'Sergei Sergeev'},
-        {name: 'Petr Petrovich'}
-    ];
+
 
     //if smth change in list then upload storage
 	$scope.$watch('todos', function () {

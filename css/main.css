@@ -1,6 +1,7 @@
 #container {
     margin: 10px auto;
     width: 50%;
+    padding: 5px;
     border: 2px solid gainsboro;
     border-radius: 5px;
 }
@@ -11,6 +12,7 @@ h3 {
 
 aside {
     float: right;
+    padding: 5px;
 }
 
 .btn {
