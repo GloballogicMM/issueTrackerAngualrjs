@@ -24,6 +24,7 @@
 						</div>
                         <form ng-show="editing" ng-submit="doneEditing(todo)">
 							<input ng-model="todo.title">
+                            <textarea ng-model="todo.desc"></textarea>
 						</form>
 					</li>
 				</ul>
