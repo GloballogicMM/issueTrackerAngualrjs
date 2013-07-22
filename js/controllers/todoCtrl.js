@@ -14,10 +14,12 @@ todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
 		$scope.todos.push({
 			title: newTodo,
             desc: $scope.newDesc,
+            date: $scope.newDate,
 			completed: false
 		});
 		$scope.newTodo = '';
-        $scope.Desc = '';
+        $scope.newDesc = '';
+        $scope.newDate = '';
 	};
 
 	$scope.editTodo = function (todo) {
