@@ -3,16 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Todo</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
 	</head>
 	<body>
 		<section ng-controller="TodoCtrl">
-			<header id="header">
-				<form id="todo-form" ng-submit="addTodo()">
-					<input ng-model="newTodo" autofocus>
-                    <textarea ng-model="newDesc">Add your </textarea>
-                    <button ng-click="addTodo()">Add new Todo</button>
-				</form>
-			</header>
+			<nav>
+                <form class="navbar-search pull-left">
+                    <input type="text" class="search-query" placeholder="Search">
+                </form>
+                <div class="btn-group">
+                    <button class="btn">Defined</button>
+                    <button class="btn">In progress</button>
+                    <button class="btn">Completed</button>
+                    <button class="btn">Blocked</button>
+                </div>
+            </nav>
 			<section ng-show="todos.length">
 				<ul>
 					<li ng-repeat="todo in todos">
