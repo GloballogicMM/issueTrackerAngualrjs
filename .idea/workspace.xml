@@ -5,8 +5,8 @@
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374479185897" ignored="false" />
-    <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374479282195" ignored="false" />
-    <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374481244864" ignored="false" />
+    <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374481627714" ignored="false" />
+    <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374481528606" ignored="false" />
     <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374481287396" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="28" selection-start="609" selection-end="609" vertical-scroll-proportion="-13.076923">
+            <state line="11" column="58" selection-start="345" selection-end="345" vertical-scroll-proportion="0.32409012">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todoCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todoCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="231" selection-end="231" vertical-scroll-proportion="0.14096186">
+            <state line="13" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="todoStorage.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/services/todoStorage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="43" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+            <state line="9" column="10" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,9 +72,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/services/todoStorage.js" />
         <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
+        <option value="$PROJECT_DIR$/js/services/todoStorage.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -264,23 +264,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/services/todoStorage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="43" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+        <state line="9" column="10" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="609" selection-end="609" vertical-scroll-proportion="-13.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="231" selection-end="231" vertical-scroll-proportion="0.14096186">
+        <state line="11" column="58" selection-start="345" selection-end="345" vertical-scroll-proportion="0.32409012">
           <folding />
         </state>
       </provider>
