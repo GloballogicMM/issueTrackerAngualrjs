@@ -7,20 +7,19 @@ todo.controller('TodoCtrl', function TodoCtrl($scope, todoStorage) {
 	}, true);
 
 	$scope.addTodo = function () {
-		var newTodo = $scope.newTodo.trim();
+		var newTodo = $scope.newTodo;
             if (!newTodo.length) {
 			return;
 		}
-
 		todos.push({
 			title: newTodo,
+            desc: $scope.newDesc,
 			completed: false
 		});
-
 		$scope.newTodo = '';
 	};
 
-	$scope.editTodo = function (todo) {
+	$scope.editTodo = function () {
         $scope.editing = true;
 
 	};
