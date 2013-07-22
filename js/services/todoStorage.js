@@ -1,4 +1,4 @@
-todo.factory('todoStorage', function () {
+todo.factory('todoStorage', function () { 
 	var STORAGE_ID = 'todos-angularjs-title',
         STORAGE_DESC = 'todos-angularjs-desc';
 	return {
