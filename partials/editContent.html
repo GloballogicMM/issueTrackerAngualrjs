@@ -1,4 +1,4 @@
-<form ng-show="todo.editing" ng-submit="doneEditing(todo)">
+<form  ng-repeat="todo in todos" ng-show="todo.editing" ng-submit="doneEditing(todo)">
     <div class="control-group">
         <label class="control-label" for="inputName">Name: </label>
         <div class="controls">
@@ -34,3 +34,28 @@
     <button ng-click="doneEditing(todo)">apply</button>
     <button ng-click="cancelEdit(todo)">cancel</button>
 </form>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.multiselect').multiselect({
+            buttonClass: 'btn',
+            buttonWidth: 'auto',
+            buttonContainer: '<div class="btn-group" />',
+            maxHeight: false,
+            buttonText: function(options) {
+                if (options.length == 0) {
+                    return 'None selected <b class="caret"></b>';
+                }
+                else if (options.length > 3) {
+                    return options.length + ' selected  <b class="caret"></b>';
+                }
+                else {
+                    var selected = '';
+                    options.each(function() {
+                        selected += $(this).text() + ', ';
+                    });
+                    return selected.substr(0, selected.length -2) + ' <b class="caret"></b>';
+                }
+            }
+        });
+    });
+</script>
