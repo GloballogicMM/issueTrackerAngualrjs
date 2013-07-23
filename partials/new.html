@@ -9,18 +9,19 @@
 <section ng-show="todos.length">
     <ul>
         <li ng-repeat="todo in todos">
-            <div class="view">
+            <div class="view" ng-show="!todo.editing">
                 <label>{{todo.title}}</label>
                 <p>{{todo.desc}}</p>
                 <span>{{todo.date}}</span>
-                <button ng-click="editTodo(todo)">Edit</button>
+                <button ng-click="editTodo(todo)" ng-disabled="editing">Edit</button>
                 <button ng-click="removeTodo(todo)">del</button>
             </div>
             <form ng-show="todo.editing" ng-submit="doneEditing(todo)">
                 <input ng-model="todo.title">
                 <textarea ng-model="todo.desc"></textarea>
-                <input type="date">
-                <button data-ng-click="doneEditing(todo)">apply</button>
+                <input type="date" ng-model="todo.date">
+                <button ng-click="doneEditing(todo)">apply</button>
+                <button ng-click="cancelEdit(todo)">cancel</button>
             </form>
         </li>
     </ul>
