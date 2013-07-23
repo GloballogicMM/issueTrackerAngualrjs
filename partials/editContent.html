@@ -1,4 +1,4 @@
-<form ng-show="todo.editing" ng-submit="doneEditing(todo)">
+<form  ng-repeat="todo in todos" ng-show="todo.editing" ng-submit="doneEditing(todo)">
     <div class="control-group">
         <label class="control-label" for="inputName">Name: </label>
         <div class="controls">
