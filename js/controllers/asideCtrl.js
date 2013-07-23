@@ -117,16 +117,27 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog) {
         $scope.filtering = false;
     };
 
-    $scope.opts = {
+    newOpts = {
         backdrop: true,
         keyboard: true,
         backdropClick: true,
-        templateUrl:  'partials/createContent.html', // OR: templateUrl: 'path/to/view.html',
+        templateUrl:  'partials/createContent.html',
         controller: 'todoCtrl'
     };
 
-    $scope.openDialog = function(){
-        var d = $dialog.dialog($scope.opts);
+    $scope.openNewDialog = function(){
+        var d = $dialog.dialog(newOpts);
         d.open();
     };
+
+    $scope.openViewDialog = function(todo) {
+        var d = $dialog.dialog({
+            backdrop: true,
+            keyboard: true,
+            backdropClick: true,
+            templateUrl:  'partials/viewContent.html',
+            controller: 'todoCtrl'
+        });
+        d.open();
+    }
 });

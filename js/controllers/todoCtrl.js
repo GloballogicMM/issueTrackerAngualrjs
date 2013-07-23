@@ -1,6 +1,7 @@
-todo.controller('todoCtrl', function TodoCtrl($scope, todoStorage) {
+todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage) {
     var todos = $scope.todos = todoStorage.get(),
-        oldTitle, oldDesc, oldDate, oldUsers;
+        oldTitle, oldDesc, oldDate, oldUsers, oldStatus,
+        id = -1;
 
     $scope.editing = false;
 
@@ -18,12 +19,15 @@ todo.controller('todoCtrl', function TodoCtrl($scope, todoStorage) {
             title: newTodo,
             desc: $scope.newDesc,
             date: $scope.newDate,
-            users: $scope.newUsers
+            users: $scope.newUsers,
+            id: id++,
+            status: 0
         });
         $scope.newTodo = '';
         $scope.newDesc = '';
         $scope.newDate = '';
         $scope.newUsers = '';
+        dialog.close();
     };
 
     $scope.editTodo = function (todo) {
@@ -33,6 +37,7 @@ todo.controller('todoCtrl', function TodoCtrl($scope, todoStorage) {
         oldDesc = todo.desc;
         oldDate = todo.date;
         oldUsers = todo.users;
+        oldStatus = todo.status;
     };
 
     $scope.doneEditing = function (todo) {
@@ -48,6 +53,7 @@ todo.controller('todoCtrl', function TodoCtrl($scope, todoStorage) {
         todo.desc = oldDesc;
         todo.date = oldDate;
         todo.users = oldUsers;
+        todo.status = oldStatus;
     };
 
     $scope.removeTodo = function (todo) {

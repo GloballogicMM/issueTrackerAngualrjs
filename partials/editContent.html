@@ -29,6 +29,18 @@
                 <option value="user3">User3</option>
             </select>
         </div>
+    </div>     .
+
+    <div class="control-group">
+        <label class="control-label" for="inputStatus">Status: </label>
+        <div class="controls">
+            <select ng-model="todo.status" id="inputStatus">
+                <option value="0">Defined</option>
+                <option value="1">In progress</option>
+                <option value="2">Completed</option>
+                <option value="3">Blocked</option>
+            </select>
+        </div>
     </div>
 
     <button ng-click="doneEditing(todo)">apply</button>

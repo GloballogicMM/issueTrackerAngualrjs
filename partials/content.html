@@ -24,12 +24,12 @@
     <div ng-repeat="week in weeks">
         <h4>{{ week.name }}</h4>
         <div ng-repeat="history in mockhistory | historyFilter: search : week.number|orderBy: 'status'">
-            <div class="history {{ statuses[history.status]}}">
+            <a href="#" ng-click="openViewDialog(history.id)"><div class="history {{ statuses[history.status]}}">
                 <h4>{{ history.title }}</h4>
                 <span class='estimate'>{{ history.estimate }}h</span>
                 <p>{{ users[history.user[0]].name }} ... </p>
-            </div>
+            </div></a>
         </div>
-        <div class="history new btn" ng-show="!filtering" ng-click="openDialog()"><span class="plus">+</span></div>
+        <div class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
     </div>
 </article>
