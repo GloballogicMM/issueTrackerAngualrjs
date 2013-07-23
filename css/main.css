@@ -29,6 +29,10 @@ aside {
     border-left: 15px solid gainsboro
 }
 
+h4 {
+    clear: left;
+}
+
 .estimate {
     float: right;
 }

@@ -53,23 +53,25 @@ todo.controller("asideCtrl", function asideCtrl($scope) {
 
     function getWeeksNames(startWeek, endWeek) {
         var weeksNames = [],
-            weekName,
+            week,
             monday,
             sunday;
 
         for (var i = startWeek; i <= endWeek; i++) {
+            week = {};
             monday = Date.today().setWeek(i);
             sunday = new Date(monday).moveToDayOfWeek(0);
 
-            weekName = monday.toString("MMMM, dd") + ' - ';
+            week.name = monday.toString("MMMM, dd") + ' - ';
+            week.number = i;
 
             if (monday.toString("M") === sunday.toString("M")) {
-                weekName += sunday.toString("dd");
+                week.name += sunday.toString("dd");
             } else {
-                weekName += sunday.toString("MMMM, dd");
+                week.name += sunday.toString("MMMM, dd");
             }
 
-            weeksNames.push(weekName);
+            weeksNames.push(week);
         }
         return weeksNames;
     }
