@@ -6,13 +6,30 @@ todo.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.otherwise({redirectTo: '/'});
 }]);
 
-todo.directive('todo', function () {
+todo.directive('createcontent', function () {
     return {
         restrict: 'E',
         transclude: true,
-        templateUrl: 'partials/new.html'
+        templateUrl: 'partials/createContent.html'
     }
 });
+
+todo.directive('editcontent', function () {
+    return {
+        restrict: 'E',
+        transclude: true,
+        templateUrl: 'partials/editContent.html'
+    }
+});
+
+todo.directive('viewcontent', function () {
+    return {
+        restrict: 'E',
+        transclude: true,
+        templateUrl: 'partials/viewContent.html'
+    }
+});
+
 todo.directive('asidemy', function(){
     return {
         restrict:'E',

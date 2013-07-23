@@ -1,0 +1,63 @@
+<header id="header">
+    <form id="todo-form" data-ng-submit="addTodo()">
+        <div class="control-group">
+            <label class="control-label" for="inputName">Name: </label>
+            <div class="controls">
+                <input data-ng-model="newTodo" id="inputName" autofocus>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDesc">Description: </label>
+            <div class="controls">
+                <textarea data-ng-model="newDesc" id="inputDesc">Add your </textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDate">Date: </label>
+            <div class="controls">
+                <input type="text" data-ng-model="newDate" id="inputDate">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputUsers">Users: </label>
+            <div class="controls">
+                <select class="multiselect" multiple="multiple" ng-model="todo.users" id="inputUsers">
+                    <option value="user1">User1</option>
+                    <option value="user2">User2</option>
+                    <option value="user3">User3</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="btn" data-ng-click="addTodo()">Add new Todo</button>
+    </form>
+</header>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.multiselect').multiselect({
+            buttonClass: 'btn',
+            buttonWidth: 'auto',
+            buttonContainer: '<div class="btn-group" />',
+            maxHeight: false,
+            buttonText: function(options) {
+                if (options.length == 0) {
+                    return 'None selected <b class="caret"></b>';
+                }
+                else if (options.length > 3) {
+                    return options.length + ' selected  <b class="caret"></b>';
+                }
+                else {
+                    var selected = '';
+                    options.each(function() {
+                        selected += $(this).text() + ', ';
+                    });
+                    return selected.substr(0, selected.length -2) + ' <b class="caret"></b>';
+                }
+            }
+        });
+    });
+</script>
