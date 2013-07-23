@@ -45,7 +45,7 @@ todo.controller('todoCtrl', function TodoCtrl($scope, todoStorage) {
         todo.title = oldTitle;
         todo.desc = oldDesc;
         todo.date = oldDate;
-    }
+    };
 
 	$scope.removeTodo = function (todo) {
 		todos.splice(todos.indexOf(todo), 1);

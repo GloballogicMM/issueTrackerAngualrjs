@@ -1,0 +1,30 @@
+<aside >
+    <form class="navbar-search pull-left">
+        <div class="input-append">
+            <input type="text" class="search-query" placeholder="Search" ng-model="search.title">
+        </div>
+    </form>
+    <br>
+    <div class="btn-group btn-group-vertical">
+        <button class="btn btn-inverse btn-block" ng-click="searchByStatus(0)">Defined</button>
+        <button class="btn btn-warning btn-block" ng-click="searchByStatus(1)">In progress</button>
+        <button class="btn btn-success btn-block" ng-click="searchByStatus(2)">Completed</button>
+        <button class="btn btn-danger btn-block" ng-click="searchByStatus(3)">Blocked</button>
+    </div>
+    <br>
+    <div>
+        <ul class="unstyled" ng-repeat="user in users">
+            <li class="" ng-click="searchByUser($index)">{{ user.name }}</li>
+        </ul>
+    </div>
+    <button class="btn" ng-click="clearFilters()">Clear filters</button>
+</aside>
+<article>
+    <div class="unstyled" ng-repeat="history in mockhistory | historyFilter: search">
+        <div class="history {{ statuses[history.status]}}">
+            <h4>{{ history.title }}</h4>
+            <span class='estimate'>{{ history.estimate }}h</span>
+            <p ng-repeat="index in history.user">{{ users[index].name }} </p>
+        </div>
+    </div>
+</article>
