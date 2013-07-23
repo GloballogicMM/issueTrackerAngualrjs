@@ -1,7 +1,7 @@
-var todo = angular.module('todo', []);
+var todo = angular.module('todo', ['ui.bootstrap']);
 
 todo.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/#new', {templateUrl: 'partials/new.html', controller: 'todoCtrl'});
+    $routeProvider.when('/new', {templateUrl: 'partials/createContent.html', controller: 'todoCtrl'});
     $routeProvider.when('/', {templateUrl:'partials/content.htm', controller:'asideCtrl'})
     $routeProvider.otherwise({redirectTo: '/'});
 }]);

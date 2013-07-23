@@ -24,13 +24,19 @@ aside {
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    width: 200px;
+    width: 150px;
+    height: 75px;
     float: left;
-    border-left: 15px solid gainsboro
 }
 
 h4 {
     clear: left;
+}
+
+.new {
+    width: 165px;
+    text-align: center;
+    line-height: 75px;
 }
 
 .estimate {
@@ -38,17 +44,25 @@ h4 {
 }
 
 .defined {
-    border-left-color: #000;
+    border-left: 15px solid #000;
 }
 
 .inprogress {
-    border-left-color: #f89406;
+    border-left: 15px solid #f89406;
 }
 
 .complete {
-    border-left-color: #51a351;
+    border-left: 15px solid #51a351;
 }
 
 .blocked {
-    border-left-color: #bd362f;
+    border-left: 15px solid #bd362f;
+}
+
+.plus {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60pt;
+    color: #808080;
+    vertical-align: middle;
 }

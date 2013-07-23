@@ -23,7 +23,6 @@ todo.filter('historyFilter', function() {
 });
 
 function arrayContainsElement(array1, array2) {
-    console.log(array2.length);
     if (array2.length === 0) {
         return (array1.indexOf(array2) >= 0);
     }

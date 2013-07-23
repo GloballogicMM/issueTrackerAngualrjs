@@ -1,10 +1,11 @@
-todo.controller("asideCtrl", function asideCtrl($scope) {
+todo.controller("asideCtrl", function asideCtrl($scope, $dialog) {
 
     $scope.statuses = ['defined', 'inprogress', 'complete', 'blocked'];
     $scope.search = {};
     $scope.search.title = "";
     $scope.search.statuses = [];
     $scope.search.users = [];
+    $scope.filtering = false;
     $scope.users = [
         {name: 'Ivan Ivanov', status: 0, text: 'a'},
         {name: 'Sergei Sergeev', status: 1, text: 'b'},
@@ -33,12 +34,28 @@ todo.controller("asideCtrl", function asideCtrl($scope) {
             estimate: 4
         });
     addHistory({
-            title: 'Item1',
+            title: 'History1',
             status: 3,
             user: [0, 1],
             date: new Date(2013, 6, 25),
             estimate: 4
         });
+
+    addHistory({
+        title: 'History42',
+        status: 0,
+        user: [2, 1],
+        date: new Date(2013, 6, 18),
+        estimate: 4
+    });
+
+    addHistory({
+        title: 'History41',
+        status: 0,
+        user: [1, 2],
+        date: new Date(2013, 6, 31),
+        estimate: 4
+    });
 
     function addHistory(history) {
         history.week = history.date.getWeek();
@@ -49,7 +66,6 @@ todo.controller("asideCtrl", function asideCtrl($scope) {
     }
 
     $scope.weeks = getWeeksNames($scope.startWeek, $scope.endWeek);
-    console.log($scope.weeks);
 
     function getWeeksNames(startWeek, endWeek) {
         var weeksNames = [],
@@ -62,13 +78,13 @@ todo.controller("asideCtrl", function asideCtrl($scope) {
             monday = Date.today().setWeek(i);
             sunday = new Date(monday).moveToDayOfWeek(0);
 
-            week.name = monday.toString("MMMM, dd") + ' - ';
+            week.name = monday.toString("MMMM, d");
             week.number = i;
 
             if (monday.toString("M") === sunday.toString("M")) {
-                week.name += sunday.toString("dd");
+                week.name += sunday.toString(" - d");
             } else {
-                week.name += sunday.toString("MMMM, dd");
+                week.name += sunday.toString(" - MMMM, d");
             }
 
             weeksNames.push(week);
@@ -82,6 +98,7 @@ todo.controller("asideCtrl", function asideCtrl($scope) {
         } else {
             $scope.search.statuses.splice($scope.search.statuses.indexOf(status), 1);
         }
+        $scope.filtering = true;
     };
 
     $scope.searchByUser = function(username) {
@@ -90,13 +107,26 @@ todo.controller("asideCtrl", function asideCtrl($scope) {
         } else {
             $scope.search.users.splice($scope.search.users.indexOf(username), 1);
         }
-
+        $scope.filtering = true;
     };
 
     $scope.clearFilters = function() {
         $scope.search.title = "";
         $scope.search.statuses = [];
         $scope.search.users = [];
+        $scope.filtering = false;
     };
 
+    $scope.opts = {
+        backdrop: true,
+        keyboard: true,
+        backdropClick: true,
+        templateUrl:  'partials/createContent.html', // OR: templateUrl: 'path/to/view.html',
+        controller: 'todoCtrl'
+    };
+
+    $scope.openDialog = function(){
+        var d = $dialog.dialog($scope.opts);
+        d.open();
+    };
 });
