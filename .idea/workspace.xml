@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/createContent.html" afterPath="$PROJECT_DIR$/partials/createContent.html" />
+      <change type="DELETED" beforePath="C:\wamp\www\issueTrackerAngualrjs\partials\new.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/editContent.html" afterPath="$PROJECT_DIR$/partials/editContent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/new.html" afterPath="$PROJECT_DIR$/partials/new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/todoCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/viewContent.html" afterPath="$PROJECT_DIR$/partials/viewContent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374583862969" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374585190564" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374560956666" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
-    <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374584926855" ignored="false" />
+    <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374585353122" ignored="false" />
     <file path="$PROJECT_DIR$/../jasmin/SpecRunner.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374483152305" ignored="false" />
     <file path="/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374563447014" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561390017" ignored="false" />
@@ -56,7 +53,7 @@
       <file leaf-file-name="createContent.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/createContent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="906" selection-end="906" vertical-scroll-proportion="3.9230769">
+            <state line="53" column="35" selection-start="2102" selection-end="2102" vertical-scroll-proportion="-26.807692">
               <folding />
             </state>
           </provider>
@@ -74,34 +71,25 @@
       <file leaf-file-name="editContent.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/editContent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="20" selection-start="1600" selection-end="1600" vertical-scroll-proportion="-8.307693">
+            <state line="36" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-9.538462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todoCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todoCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1339" selection-end="1339" vertical-scroll-proportion="2.4414895">
+            <state line="10" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="asideCtrl.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="asideCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers/asideCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="29" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/new.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="50" selection-start="1272" selection-end="1272" vertical-scroll-proportion="-14.846154">
+            <state line="6" column="29" selection-start="247" selection-end="247" vertical-scroll-proportion="0.045212764">
               <folding />
             </state>
           </provider>
@@ -159,9 +147,9 @@
         <option value="$PROJECT_DIR$/partials/new.html" />
         <option value="$PROJECT_DIR$/partials/viewContent.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/partials/editContent.html" />
-        <option value="$PROJECT_DIR$/partials/createContent.html" />
         <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
+        <option value="$PROJECT_DIR$/partials/createContent.html" />
+        <option value="$PROJECT_DIR$/partials/editContent.html" />
       </list>
     </option>
   </component>
@@ -332,8 +320,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\issueTrackerAngualrjs" />
       <recent name="C:\wamp\www\issueTrackerAngualrjs\partials" />
+      <recent name="C:\wamp\www\issueTrackerAngualrjs" />
       <recent name="D:\users\mariia.verbenko\Documents\GitHub\issueTrackerAngualrjs" />
     </key>
   </component>
@@ -376,7 +364,11 @@
       <created>1374561772024</created>
       <updated>1374561772024</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create new Controller">
+      <created>1374585194591</created>
+      <updated>1374585194591</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -401,13 +393,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2209857" sideWeight="0.672496" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2209857" sideWeight="0.672496" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -417,7 +410,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -465,7 +457,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed add bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="create new Controller" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -482,6 +474,7 @@
     <MESSAGE value=" add todo" />
     <MESSAGE value="debug add to list" />
     <MESSAGE value="fixed add bugs" />
+    <MESSAGE value="create new Controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -524,7 +517,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/asideCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+        <state line="6" column="29" selection-start="247" selection-end="247" vertical-scroll-proportion="0.045212764">
           <folding />
         </state>
       </provider>
@@ -550,27 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.1153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="50" selection-start="1272" selection-end="1272" vertical-scroll-proportion="-14.846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/viewContent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="1466" selection-end="1466" vertical-scroll-proportion="-20.076923">
@@ -578,23 +550,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.1153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/partials/editContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="1600" selection-end="1600" vertical-scroll-proportion="-8.307693">
+        <state line="36" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-9.538462">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/createContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="906" selection-end="906" vertical-scroll-proportion="3.9230769">
+        <state line="53" column="35" selection-start="2102" selection-end="2102" vertical-scroll-proportion="-26.807692">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+    <entry file="file://$PROJECT_DIR$/partials/viewContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1339" selection-end="1339" vertical-scroll-proportion="2.4414895">
+        <state line="15" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="-9.807693">
           <folding />
         </state>
       </provider>
