@@ -7,7 +7,7 @@
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374579660595" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374581543471" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374579585903" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
     <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374567944768" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="$PROJECT_DIR$/../untitled/list.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561626616" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/detail.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561460069" ignored="false" />
     <file path="/list.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561626616" ignored="false" />
-    <file path="/new.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374579991638" ignored="false" />
+    <file path="/new.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374581053061" ignored="false" />
     <file path="/content.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374579494007" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="new.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.29254302">
+            <state line="26" column="42" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.98176295">
               <folding />
             </state>
           </provider>
@@ -360,7 +360,11 @@
       <created>1374579665659</created>
       <updated>1374579665659</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new commit">
+      <created>1374580132157</created>
+      <updated>1374580132157</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -387,7 +391,7 @@
     <frame x="62" y="0" width="652" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -449,7 +453,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="divide index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="new design with bootstrap" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -467,6 +471,8 @@
     <MESSAGE value="debug add to list" />
     <MESSAGE value="fixed add bugs" />
     <MESSAGE value="divide index.html" />
+    <MESSAGE value="new commit" />
+    <MESSAGE value="new design with bootstrap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -579,7 +585,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.29254302">
+        <state line="26" column="42" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.98176295">
           <folding />
         </state>
       </provider>

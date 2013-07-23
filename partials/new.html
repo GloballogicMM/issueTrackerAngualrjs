@@ -1,14 +1,40 @@
 <header id="header">
     <form id="todo-form" data-ng-submit="addTodo()">
-        <input data-ng-model="newTodo" autofocus>
-        <textarea data-ng-model="newDesc">Add your </textarea>
-        <input type="text" data-ng-model="newDate">
-        <select multiple ng-model="todo.users">
-            <option value="user1">User1</option>
-            <option value="user2">User2</option>
-            <option value="user3">User3</option>
-        </select>
-        <button data-ng-click="addTodo()">Add new Todo</button>
+        <div class="control-group">
+            <label class="control-label" for="inputName">Name: </label>
+            <div class="controls">
+                <input data-ng-model="newTodo" id="inputName" autofocus>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDesc">Description: </label>
+            <div class="controls">
+                <textarea data-ng-model="newDesc" id="inputDesc">Add your </textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDate">Date: </label>
+            <div class="controls">
+                <input type="text" data-ng-model="newDate" id="inputDate">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputUsers">Users: </label>
+            <div class="controls">
+                <select multiple="multiple" ng-model="todo.users" id="inputUsers">
+                    <option value="user1">User1</option>
+                    <option value="user2">User2</option>
+                    <option value="user3">User3</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <button class="btn" data-ng-click="addTodo()">Add new Todo</button>
     </form>
 </header>
 <section ng-show="todos.length">
@@ -19,8 +45,8 @@
                 <p>{{todo.desc}}</p>
                 <span>{{todo.date}}</span>
                 <span>{{todo.users}}</span>
-                <button ng-click="editTodo(todo)" ng-disabled="editing">Edit</button>
-                <button ng-click="removeTodo(todo)">del</button>
+                <button class="btn" ng-click="editTodo(todo)" ng-disabled="editing">Edit</button>
+                <button class="btn" ng-click="removeTodo(todo)">del</button>
             </div>
             <form ng-show="todo.editing" ng-submit="doneEditing(todo)">
                 <input ng-model="todo.title">
