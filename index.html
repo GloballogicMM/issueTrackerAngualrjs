@@ -9,20 +9,27 @@
 	<body ng-controller="asideCtrl">
 		<section id="container" class='clearfix'>
             <header><h3>Scrum board</h3></header>
+
+            <h4>Add new task</h4>
+
+            <section data-ng-controller="todoCtrl">
+                <todo></todo>
+            </section>
+
 			<aside>
                 <form class="navbar-search pull-left">
                     <div class="input-append">
                         <input type="text" class="search-query" placeholder="Search" ng-model="search.title">
                     </div>
                 </form>
-                </br></br>
+                <br>
                 <div class="btn-group btn-group-vertical">
                     <button class="btn btn-inverse btn-block" ng-click="searchByStatus(0)">Defined</button>
                     <button class="btn btn-warning btn-block" ng-click="searchByStatus(1)">In progress</button>
                     <button class="btn btn-success btn-block" ng-click="searchByStatus(2)">Completed</button>
                     <button class="btn btn-danger btn-block" ng-click="searchByStatus(3)">Blocked</button>
                 </div>
-                </br></br>
+                <br>
                 <div>
                     <ul class="unstyled" ng-repeat="user in users">
                         <li class="" ng-click="searchByUser($index)">{{ user.name }}</li>

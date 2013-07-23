@@ -1,4 +1,4 @@
-todo.controller("asideCtrl", function asideCtrl($scope, todoStorage) {
+todo.controller("asideCtrl", function asideCtrl($scope) {
 
     $scope.statuses = ['defined', 'inprogress', 'complete', 'blocked'];
     $scope.search = {};
