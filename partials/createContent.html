@@ -28,8 +28,9 @@
 
         <div class="control-group">
             <label class="control-label" for="inputTime">Time: </label>
-            <div class="controls">
-                <input type="number" min="0" max="100" data-ng-model="newTime" id="inputTime">
+            <div class="controls" >
+                <input type="number" data-ng-model="newTime" id="inputTime">
+                <div class="timeSlider" ui-slider min="0" max="50" ng-model="newTime"></div>
             </div>
         </div>
 

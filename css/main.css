@@ -66,3 +66,9 @@ h4 {
     color: #808080;
     vertical-align: middle;
 }
+/*Slider Style*/
+.timeSlider {
+    width: 50%;
+    margin-left: 15px;
+    display: inline-block;
+}
