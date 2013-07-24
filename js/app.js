@@ -1,11 +1,5 @@
 var todo = angular.module('todo', ['ui.bootstrap']);
 
-todo.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/new', {templateUrl: 'partials/createContent.html', controller: 'todoCtrl'});
-    $routeProvider.when('/', {templateUrl:'partials/content.htm', controller:'asideCtrl'})
-    $routeProvider.otherwise({redirectTo: '/'});
-}]);
-
 todo.directive('createcontent', function () {
     return {
         restrict: 'E',
