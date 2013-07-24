@@ -1,11 +1,14 @@
 <link rel="stylesheet" href="css/createEdit.css"/>
 <section id="createContent">
     <h3>New Story</h3>
-    <form id="todo-form" data-ng-submit="addTodo()">
+    <form id="todo-form" data-ng-submit="addTodo()" class="row form-horizontal">
         <div class="control-group">
             <label class="control-label" for="inputName">Title: </label>
             <div class="controls">
                 <input type="text" data-ng-model="newTodo" id="inputName" autofocus>
+                <div class="input-help">
+                    <h4>Invalid Name</h4>
+                </div>
             </div>
         </div>
 
@@ -34,7 +37,7 @@
             </div>
         </div>
 
-        <button class="btn" data-ng-click="addTodo()">Add new Todo</button>
+        <button class="btn" type="submit" >Add new Todo</button>
     </form>
 </section>
 <script type="text/javascript">
