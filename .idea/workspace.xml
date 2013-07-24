@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/createContent.html" afterPath="$PROJECT_DIR$/partials/createContent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/validate.css" afterPath="$PROJECT_DIR$/css/validate.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374657306083" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374657686214" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374657275260" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
     <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374585353122" ignored="false" />
@@ -21,7 +20,7 @@
     <file path="/list.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561626616" ignored="false" />
     <file path="/new.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374566191483" ignored="false" />
     <file path="/editContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374584579814" ignored="false" />
-    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374657609151" ignored="false" />
+    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374658283282" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <file leaf-file-name="createContent.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/createContent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="552" selection-end="552" vertical-scroll-proportion="0.36690646">
+            <state line="43" column="62" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.397482">
               <folding />
             </state>
           </provider>
@@ -381,7 +380,11 @@
       <created>1374657309174</created>
       <updated>1374657309174</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add style for create">
+      <created>1374657691310</created>
+      <updated>1374657691311</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -470,7 +473,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add validation css&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add style for create" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -490,6 +493,7 @@
     <MESSAGE value="create new Controller" />
     <MESSAGE value="delete new.html&#10;" />
     <MESSAGE value="add validation css&#10;" />
+    <MESSAGE value="add style for create" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -592,7 +596,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/createContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="552" selection-end="552" vertical-scroll-proportion="0.36690646">
+        <state line="43" column="62" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.397482">
           <folding />
         </state>
       </provider>

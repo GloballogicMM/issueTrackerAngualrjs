@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/createEdit.css"/>
 <section id="createContent">
     <h3>New Story</h3>
-    <form id="todo-form" data-ng-submit="addTodo()" class="row form-horizontal">
+    <form id="todo-form" data-ng-submit="addTodo()" class="row form-horizontal" novalidate>
         <div class="control-group">
             <label class="control-label" for="inputName">Title: </label>
             <div class="controls">
@@ -37,7 +37,15 @@
             </div>
         </div>
 
-        <button class="btn" type="submit" >Add new Todo</button>
+        <div class="control-group">
+            <div class="controls">
+
+                <button class="btn" disabled>Add</button>
+                <button type="submit" class="btn">Add</button>
+            </div>
+        </div>
+
+
     </form>
 </section>
 <script type="text/javascript">
