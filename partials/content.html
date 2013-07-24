@@ -26,11 +26,10 @@
         <div ng-repeat="item in history | historyFilter: search : week.number|orderBy: 'status'">
             <a href="#" ng-click="openViewDialog(item)"><div class="history {{ statuses[item.status]}}">
                 <h4>{{ item.title }}</h4>
-                <span class='estimate'>{{ item.estimate }}h</span>
+                <span class='estimate'>{{ item.time }}h</span>
                 <p>{{ users[item.user[0]].name }} ... </p>
             </div></a>
         </div>
-        <div class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
     </div>
     <div style="clear: both;" class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
 </article>

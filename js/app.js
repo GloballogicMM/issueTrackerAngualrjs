@@ -8,22 +8,6 @@ todo.directive('createcontent', function () {
     }
 });
 
-todo.directive('editcontent', function () {
-    return {
-        restrict: 'E',
-        transclude: true,
-        templateUrl: 'partials/editContent.html'
-    }
-});
-
-todo.directive('viewcontent', function () {
-    return {
-        restrict: 'E',
-        transclude: true,
-        templateUrl: 'partials/viewContent.html'
-    }
-});
-
 todo.directive('asidemy', function(){
     return {
         restrict:'E',

@@ -1,5 +1,7 @@
 todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users) {
 
+    //todoStorage.put([]);
+
     $scope.statuses = ['defined', 'inprogress', 'complete', 'blocked'];
     $scope.search = {};
     $scope.search.title = "";
@@ -85,18 +87,23 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
 
     $scope.openViewDialog = function(history) {
         var d = $dialog.dialog({
-            backdrop: true,
-            keyboard: true,
-            backdropClick: true,
+            backdrop: false,
+            keyboard: false,
+            backdropClick: false,
             templateUrl:  'partials/viewById.html',
             controller: 'historyViewCtrl',
             resolve: {
-                history: function() {
-                    return history;
+                todos: function() {
+                    return $scope.history;
+                },
+                index: function() {
+                    return $scope.history.indexOf(history);
                 }
             }
         });
-        d.open();
+        d.open().then(function(todos) {
+             todoStorage.put(todos);
+        });
     }
 
     $scope.clearStorage = function() {

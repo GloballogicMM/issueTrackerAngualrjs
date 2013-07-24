@@ -1,13 +1,10 @@
-todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage) {
-    var todos = $scope.todos = todoStorage.get(),
-        oldTitle, oldDesc, oldDate, oldUsers, oldStatus, oldTime;
+todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users) {
+    var oldTitle, oldDesc, oldDate, oldUsers, oldStatus, oldTime;
 
+    $scope.todos = todoStorage.get();
+    $scope.history = $scope.todos[$scope.todos.indexOf(history)];
+    $scope.users = users;
     $scope.editing = false;
-
-    //if smth change in list then upload storage
-    $scope.$watch('todos', function () {
-        todoStorage.put(todos);
-    }, true);
 
     $scope.addTodo = function () {
         var newTodo = $scope.newTodo,
@@ -26,6 +23,7 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage) {
             status: 0
         });
         $scope.todos.sort(function(a,b) { return a.week - b.week;});
+        todoStorage.put($scope.todos);
         $scope.newTodo = '';
         $scope.newDesc = '';
         $scope.newDate = '';
@@ -33,37 +31,4 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage) {
         $scope.newTime = '';
         dialog.close();
     };
-
-    $scope.editTodo = function (todo) {
-        $scope.editing = true;
-        todo.editing = true;
-        oldTitle = todo.title;
-        oldDesc = todo.desc;
-        oldDate = todo.date;
-        oldUsers = todo.user;
-        oldStatus = todo.status;
-        oldTime = todo.time;
-    };
-
-    $scope.doneEditing = function (todo) {
-        if (!todo.title) {
-            $scope.removeTodo(todo);
-        }
-        todo.editing = false;
-        $scope.editing = false;
-    };
-
-    $scope.cancelEdit = function (todo) {
-        todo.title = oldTitle;
-        todo.desc = oldDesc;
-        todo.date = oldDate;
-        todo.user = oldUsers;
-        todo.status = oldStatus;
-        todo.time = oldTime;
-    };
-
-    $scope.removeTodo = function (todo) {
-        todos.splice(todos.indexOf(todo), 1);
-    };
-
 });

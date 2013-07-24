@@ -3,10 +3,59 @@
     <button style="float: right;" class="btn-link" ng-click="close()"><i class="icon-remove"></i></button>
     <h4>{{ history.title }}</h4>
     <p>{{ history.desc }}</p>
-    <p>Estimate: {{ history.estimate }}h</p>
+    <p>Estimate: {{ history.time }}h</p>
     <ul class="unstyled">
         Assigned:
         <li  ng-repeat="user in history.user">{{ users[user].name }}</li>
     </ul>
-    <button class="btn" ng-click="editTodo()">Edit</button>
+    <button class="btn" ng-click="editTodo(history)">Edit</button>
+</section>
+<section ng-show="editing">
+    <div class="control-group">
+        <label class="control-label" for="inputName">Name: </label>
+        <div class="controls">
+            <input data-ng-model="newTitle" id="inputName" autofocus>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="inputDesc">Description: </label>
+        <div class="controls">
+            <textarea data-ng-model="newDesc" id="inputDesc">Add your </textarea>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="inputTime">Time: </label>
+        <div class="controls">
+            <input type="number" min="0" max="100" data-ng-model="newTime" id="inputTime">
+        </div>
+    </div>
+
+
+    <div class="control-group">
+        <label class="control-label" for="inputUsers">Users: </label>
+        <div class="controls">
+            <select class="multiselect" multiple="multiple" ng-model="newUsers" id="inputUsers">
+                <option value="user1">User1</option>
+                <option value="user2">User2</option>
+                <option value="user3">User3</option>
+            </select>
+        </div>
+    </div>     .
+
+    <div class="control-group">
+        <label class="control-label" for="inputStatus">Status: </label>
+        <div class="controls">
+            <select ng-model="newStatus" id="inputStatus">
+                <option value="0">Defined</option>
+                <option value="1">In progress</option>
+                <option value="2">Completed</option>
+                <option value="3">Blocked</option>
+            </select>
+        </div>
+    </div>
+
+    <button ng-click="doneEditing(history)">apply</button>
+    <button ng-click="cancelEdit(history)">cancel</button>
 </section>
