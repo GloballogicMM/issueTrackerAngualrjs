@@ -22,14 +22,16 @@
         <div class="control-group">
             <label class="control-label" for="inputDate">Select date: </label>
             <div class="controls">
-                <input type="text" data-ng-model="newDate" id="inputDate" datepicker>
+                <input type="date" data-ng-model="newDate" id="inputDate">
+                <input data-ng-hide="newDate" type="text" data-ng-model="newDate" id="inputDate" datepicker>
             </div>
         </div>
 
         <div class="control-group">
             <label class="control-label" for="inputTime">Select time: </label>
             <div class="controls">
-                <input type="time" data-ng-model="newDate" id="inputTime" >
+
+                <input type="time"  data-ng-model="newTime"  id="inputTime" >
                 <div class="input-help">
                     <h4>Invalid Name</h4>
                 </div>

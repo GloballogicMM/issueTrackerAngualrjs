@@ -3,15 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/createContent.html" afterPath="$PROJECT_DIR$/partials/createContent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374659941385" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660358981" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374658796587" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
-    <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374585353122" ignored="false" />
+    <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660509110" ignored="false" />
     <file path="$PROJECT_DIR$/../jasmin/SpecRunner.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374483152305" ignored="false" />
     <file path="/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374659722637" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374659522740" ignored="false" />
@@ -21,7 +20,7 @@
     <file path="/list.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561626616" ignored="false" />
     <file path="/new.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374566191483" ignored="false" />
     <file path="/editContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374584579814" ignored="false" />
-    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660227701" ignored="false" />
+    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660904773" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660051415" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,16 @@
       <file leaf-file-name="createContent.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/createContent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="22" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.58058923">
+            <state line="30" column="78" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.47340426">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todoCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="55" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,12 +100,12 @@
         <option value="$PROJECT_DIR$/new.html" />
         <option value="$PROJECT_DIR$/partials/new.html" />
         <option value="$PROJECT_DIR$/partials/viewContent.html" />
-        <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
         <option value="$PROJECT_DIR$/partials/editContent.html" />
         <option value="$PROJECT_DIR$/partials/content.html" />
         <option value="$PROJECT_DIR$/css/validate.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
         <option value="$PROJECT_DIR$/partials/createContent.html" />
       </list>
     </option>
@@ -179,64 +187,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,7 +301,11 @@
       <created>1374659945688</created>
       <updated>1374659945688</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add time">
+      <created>1374660364269</created>
+      <updated>1374660364269</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -383,7 +337,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38474578" sideWeight="0.9602544" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38473767" sideWeight="0.9602544" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -440,7 +394,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add datepicker to create" />
+    <option name="LAST_COMMIT_MESSAGE" value="add time" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -463,6 +417,7 @@
     <MESSAGE value="add style for create" />
     <MESSAGE value="add simple valid" />
     <MESSAGE value="add datepicker to create" />
+    <MESSAGE value="add time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -518,13 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/viewContent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="42" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
@@ -555,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="68" selection-start="256" selection-end="256" vertical-scroll-proportion="-3.9230769">
@@ -569,9 +510,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="41" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="55" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/partials/createContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.58058923">
+        <state line="30" column="78" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.47340426">
           <folding />
         </state>
       </provider>
