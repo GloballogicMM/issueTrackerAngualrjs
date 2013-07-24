@@ -7,7 +7,7 @@
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660358981" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660927172" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374658796587" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
     <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660509110" ignored="false" />
@@ -44,7 +44,7 @@
       <file leaf-file-name="createContent.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/createContent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="78" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.47340426">
+            <state line="27" column="14" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.20212767">
               <folding />
             </state>
           </provider>
@@ -305,7 +305,11 @@
       <created>1374660364269</created>
       <updated>1374660364269</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add right time in data">
+      <created>1374660933192</created>
+      <updated>1374660933192</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -394,7 +398,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add time" />
+    <option name="LAST_COMMIT_MESSAGE" value="add right time in data" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -418,6 +422,7 @@
     <MESSAGE value="add simple valid" />
     <MESSAGE value="add datepicker to create" />
     <MESSAGE value="add time" />
+    <MESSAGE value="add right time in data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -526,7 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/createContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="78" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.47340426">
+        <state line="27" column="14" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.20212767">
           <folding />
         </state>
       </provider>
