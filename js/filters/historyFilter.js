@@ -10,7 +10,7 @@ todo.filter('historyFilter', function() {
 
          angular.forEach(histories, function(value, key) {
 
-             var hasStatus = (this.statuses.length === 0) ? true : (this.statuses.indexOf(value.status) >= 0),
+             var hasStatus = (this.statuses.length === 0) ? true : (this.statuses.indexOf(parseInt(value.status)) >= 0),
                  hasUser = (this.users.length === 0) ? true : arrayContainsElement(this.users, value.user),
                  matchesTitle = (this.title == '') ? true : (value.title.toLowerCase().indexOf(this.title.toLowerCase()) >= 0);
              if (hasStatus && hasUser && matchesTitle && value.week === this.weekNum) {
