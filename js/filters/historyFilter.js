@@ -27,7 +27,7 @@ function arrayContainsElement(array1, array2) {
         return (array1.indexOf(array2) >= 0);
     }
     for (var i = 0, n = array2.length; i < n; i++) {
-       if (array1.indexOf(array2[i]) >= 0) {
+       if (array1.indexOf(parseInt(array2[i])) >= 0) {
            return true;
        }
     }

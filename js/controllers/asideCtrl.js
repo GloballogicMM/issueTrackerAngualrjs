@@ -1,4 +1,4 @@
-todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage) {
+todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users) {
 
     $scope.statuses = ['defined', 'inprogress', 'complete', 'blocked'];
     $scope.search = {};
@@ -6,11 +6,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage) {
     $scope.search.statuses = [];
     $scope.search.users = [];
     $scope.filtering = false;
-    $scope.users = [
-        {name: 'Ivan Ivanov', status: 0, text: 'a'},
-        {name: 'Sergei Sergeev', status: 1, text: 'b'},
-        {name: 'Petr Petrovich', status: 2, text: 'aa'}
-    ];
+    $scope.users = users;
     var startWeek, endWeek;
 
     $scope.refreshHistory = function() {
@@ -18,7 +14,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage) {
         startWeek = $scope.history.length ? $scope.history[0].week : -1;
         endWeek = $scope.history.length ? $scope.history[$scope.history.length-1].week : -1;
         $scope.weeks = getWeeksNames(startWeek, endWeek);
-    }
+    };
 
     $scope.refreshHistory();
 
@@ -74,32 +70,29 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage) {
         $scope.filtering = false;
     };
 
-    newOpts = {
-        backdrop: true,
-        keyboard: true,
-        backdropClick: true,
-        templateUrl:  'partials/createContent.html',
-        controller: 'todoCtrl'
-    };
-
     $scope.openNewDialog = function(){
-        var d = $dialog.dialog(newOpts);
-        d.open().then(function() {
-            console.log("Then block");
-            $scope.refreshHistory();
-        });
-    };
-
-    $scope.openViewDialog = function(index) {
         var d = $dialog.dialog({
             backdrop: true,
             keyboard: true,
             backdropClick: true,
-            templateUrl:  'partials/viewContent.html',
-            controller: 'todoCtrl',
+            templateUrl:  'partials/createContent.html',
+            controller: 'todoCtrl'
+        });
+        d.open().then(function() {
+            $scope.refreshHistory();
+        });
+    };
+
+    $scope.openViewDialog = function(history) {
+        var d = $dialog.dialog({
+            backdrop: true,
+            keyboard: true,
+            backdropClick: true,
+            templateUrl:  'partials/viewById.html',
+            controller: 'historyViewCtrl',
             resolve: {
-                index: function() {
-                    return index;
+                history: function() {
+                    return history;
                 }
             }
         });

@@ -1,11 +1,12 @@
-todo.controller("historyViewCtrl", function($scope, $routeParams, todoStorage) {
+todo.controller("historyViewCtrl", function($scope, dialog, history, todoStorage, users) {
     var todos = todoStorage.get(),
         oldTitle, oldDesc, oldDate, oldUsers, oldStatus;
-    $scope.history = todos[$routeParams.id];
+    $scope.history = history;
+    $scope.users = users;
+    $scope.editing = false;
 
     $scope.editTodo = function (todo) {
         $scope.editing = true;
-        todo.editing = true;
         oldTitle = todo.title;
         oldDesc = todo.desc;
         oldDate = todo.date;
@@ -32,4 +33,8 @@ todo.controller("historyViewCtrl", function($scope, $routeParams, todoStorage) {
     $scope.removeTodo = function (todo) {
         todos.splice(todos.indexOf(todo), 1);
     };
+
+    $scope.close = function() {
+        dialog.close();
+    }
 });

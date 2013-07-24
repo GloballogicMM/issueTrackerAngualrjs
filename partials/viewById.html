@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="css/createEdit.css"/>
+<section id="view" ng-show="!editing">
+    <button style="float: right;" class="btn-link" ng-click="close()"><i class="icon-remove"></i></button>
+    <h4>{{ history.title }}</h4>
+    <p>{{ history.desc }}</p>
+    <p>Estimate: {{ history.estimate }}h</p>
+    <ul class="unstyled">
+        Assigned:
+        <li  ng-repeat="user in history.user">{{ users[user].name }}</li>
+    </ul>
+    <button class="btn" ng-click="editTodo()">Edit</button>
+</section>
