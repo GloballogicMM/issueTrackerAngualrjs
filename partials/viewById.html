@@ -11,7 +11,6 @@
     <button class="btn" ng-click="editTodo(history)">Edit</button>
     <button class="btn" data-ng-click="removeTodo(history)">Delete</button>
 </section>
-<link rel="stylesheet" href="css/createEdit.css"/>
 <section ng-show="editing">
     <h3>Edit cart</h3>
     <form class="contentBlock"  class="row form-horizontal" novalidate>
@@ -49,11 +48,9 @@
 
         <div class="control-group">
             <label class="control-label" for="inputUsers">Users: </label>
-            <div class="controls">
+            <div class="controls" >
                 <select class="multiselect" multiple="multiple" ng-model="newUsers" id="inputUsers">
-                    <option value="0">User1</option>
-                    <option value="1">User2</option>
-                    <option value="2">User3</option>
+                    <option data-ng-repeat="user in users" value="{{user.number}}">{{user.name}}</option>
                 </select>
             </div>
         </div>     .

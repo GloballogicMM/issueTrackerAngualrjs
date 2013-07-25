@@ -124,3 +124,25 @@ todo.directive('multiselect', function(){
         templateUrl:'js/ui/multiselectProperties.html'
     }
 });
+
+todo.directive('lengthValidate', function() {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function(scope, elm, attrs, ctrl) {
+            ctrl.$parsers.unshift(function(viewValue) {
+
+                scope.validLength = (viewValue ? 'valid' : undefined);
+
+                if(scope.validLength) {
+                    ctrl.$setValidity('pwd', true);
+                    return viewValue;
+                } else {
+                    ctrl.$setValidity('pwd', false);
+                    return undefined;
+                }
+
+            });
+        }
+    };
+});

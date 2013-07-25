@@ -37,9 +37,7 @@
             <label class="control-label" for="inputUsers">Users: </label>
             <div class="controls">
                 <select class="multiselect" multiple="multiple" ng-multi ng-model="newUsers" id="inputUsers">
-                    <option value="0">User1</option>
-                    <option value="1">User2</option>
-                    <option value="2">User3</option>
+                    <option data-ng-repeat="user in users" value="{{user.number}}">{{user.name}}</option>
                 </select>
             </div>
         </div>
