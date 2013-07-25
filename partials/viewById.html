@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="css/createEdit.css"/>
-<section id="view" ng-show="!editing">
+<multiselect></multiselect>
+<section class="contentBlock" ng-show="!editing">
     <button style="float: right;" class="btn-link" ng-click="close()"><i class="icon-remove"></i></button>
     <h4>{{ history.title }}</h4>
     <p>{{ history.desc }}</p>
@@ -9,53 +10,74 @@
         <li  ng-repeat="user in history.user">{{ users[user].name }}</li>
     </ul>
     <button class="btn" ng-click="editTodo(history)">Edit</button>
+    <button class="btn" data-ng-click="removeTodo(todo)">Delete</button>
 </section>
+<link rel="stylesheet" href="css/createEdit.css"/>
 <section ng-show="editing">
-    <div class="control-group">
-        <label class="control-label" for="inputName">Name: </label>
-        <div class="controls">
-            <input data-ng-model="newTitle" id="inputName" autofocus>
+    <h3>Edit cart</h3>
+    <form class="contentBlock"  class="row form-horizontal" novalidate>
+        <div class="control-group">
+            <label class="control-label" for="inputName">Name: </label>
+            <div class="controls">
+                <input data-ng-model="newTitle" id="inputName" autofocus>
+                <div class="input-help">
+                    <h4>Invalid Name</h4>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="control-group">
-        <label class="control-label" for="inputDesc">Description: </label>
-        <div class="controls">
-            <textarea data-ng-model="newDesc" id="inputDesc">Add your </textarea>
+        <div class="control-group">
+            <label class="control-label" for="inputDesc">Description: </label>
+            <div class="controls">
+                <textarea data-ng-model="newDesc" id="inputDesc">Add your </textarea>
+                <div class="input-help">
+                    <h4>Invalid Desc</h4>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="control-group">
-        <label class="control-label" for="inputTime">Time: </label>
-        <div class="controls">
-            <input type="number" min="0" max="100" data-ng-model="newTime" id="inputTime">
+        <div class="control-group">
+            <label class="control-label" for="inputTime">Time: </label>
+            <div class="controls">
+                <input type="number" min="0" max="50" data-ng-model="newTime" id="inputTime">
+                <div class="timeSlider" ui-slider min="0" max="50" ng-model="newTime"></div>
+                <div class="input-help">
+                    <h4>Invalid Time</h4>
+                </div>
+            </div>
         </div>
-    </div>
 
 
-    <div class="control-group">
-        <label class="control-label" for="inputUsers">Users: </label>
-        <div class="controls">
-            <select class="multiselect" multiple="multiple" ng-model="newUsers" id="inputUsers">
-                <option value="0">User1</option>
-                <option value="1">User2</option>
-                <option value="2">User3</option>
-            </select>
+        <div class="control-group">
+            <label class="control-label" for="inputUsers">Users: </label>
+            <div class="controls">
+                <select class="multiselect" multiple="multiple" ng-model="newUsers" id="inputUsers">
+                    <option value="0">User1</option>
+                    <option value="1">User2</option>
+                    <option value="2">User3</option>
+                </select>
+            </div>
+        </div>     .
+
+        <div class="control-group">
+            <label class="control-label" for="inputStatus">Status: </label>
+            <div class="controls">
+                <select ng-model="newStatus" id="inputStatus">
+                    <option value="0">Defined</option>
+                    <option value="1">In progress</option>
+                    <option value="2">Completed</option>
+                    <option value="3">Blocked</option>
+                </select>
+            </div>
         </div>
-    </div>     .
 
-    <div class="control-group">
-        <label class="control-label" for="inputStatus">Status: </label>
-        <div class="controls">
-            <select ng-model="newStatus" id="inputStatus">
-                <option value="0">Defined</option>
-                <option value="1">In progress</option>
-                <option value="2">Completed</option>
-                <option value="3">Blocked</option>
-            </select>
+        <div class="control-group">
+            <div class="controls">
+                <button ng-click="doneEditing(history)">apply</button>
+                <button ng-click="cancelEdit(history)">cancel</button>
+            </div>
         </div>
-    </div>
 
-    <button ng-click="doneEditing(history)">apply</button>
-    <button ng-click="cancelEdit(history)">cancel</button>
+    </form>
 </section>
+

@@ -116,3 +116,11 @@ todo.value('uiSliderConfig',{}).directive('uiSlider', ['uiSliderConfig', '$timeo
         }
     };
 }]);
+
+todo.directive('multiselect', function(){
+    return {
+        restrict:'E',
+        transclude: true,
+        templateUrl:'js/ui/multiselectProperties.html'
+    }
+});

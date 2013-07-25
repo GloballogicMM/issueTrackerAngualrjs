@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="css/createEdit.css"/>
-<section id="createContent">
+<section class="contentBlock">
     <h3>New Story</h3>
     <form id="todo-form" data-ng-submit="addTodo()" class="row form-horizontal" novalidate>
         <div class="control-group">
@@ -29,7 +28,7 @@
         <div class="control-group">
             <label class="control-label" for="inputTime">Time: </label>
             <div class="controls" >
-                <input type="number" data-ng-model="newTime" id="inputTime">
+                <input type="number" min="0" max="50" data-ng-model="newTime" id="inputTime">
                 <div class="timeSlider" ui-slider min="0" max="50" ng-model="newTime"></div>
             </div>
         </div>
@@ -37,7 +36,7 @@
         <div class="control-group">
             <label class="control-label" for="inputUsers">Users: </label>
             <div class="controls">
-                <select class="multiselect1" multiple="multiple" ng-multi ng-model="newUsers" id="inputUsers">
+                <select class="multiselect" multiple="multiple" ng-multi ng-model="newUsers" id="inputUsers">
                     <option value="0">User1</option>
                     <option value="1">User2</option>
                     <option value="2">User3</option>
@@ -47,37 +46,9 @@
 
         <div class="control-group">
             <div class="controls">
-
-                <button class="btn" disabled>Add</button>
                 <button type="submit" class="btn">Add</button>
             </div>
         </div>
-
-
     </form>
 </section>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.multiselect1').multiselect({
-            buttonClass: 'btn',
-            buttonWidth: 'auto',
-            buttonContainer: '<div class="btn-group" />',
-            maxHeight: false,
-            buttonText: function(options) {
-                if (options.length == 0) {
-                    return 'None selected <b class="caret"></b>';
-                }
-                else if (options.length > 3) {
-                    return options.length + ' selected  <b class="caret"></b>';
-                }
-                else {
-                    var selected = '';
-                    options.each(function() {
-                        selected += $(this).text() + ', ';
-                    });
-                    return selected.substr(0, selected.length -2) + ' <b class="caret"></b>';
-                }
-            }
-        });
-    });
-</script>
+<multiselect></multiselect>

@@ -72,3 +72,7 @@ h4 {
     margin-left: 15px;
     display: inline-block;
 }
+/*model window*/
+.contentBlock {
+    margin: 10px;
+}
