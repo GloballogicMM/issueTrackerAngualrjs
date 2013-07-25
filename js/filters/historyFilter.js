@@ -1,10 +1,9 @@
 todo.filter('historyFilter', function() {
-     return function(histories, search, weekNum) {
+     return function(histories, search) {
          var items = {
              title: search.title,
              users: search.users,
              statuses: search.statuses,
-             weekNum: weekNum,
              result: []
          };
 
@@ -13,7 +12,7 @@ todo.filter('historyFilter', function() {
              var hasStatus = (this.statuses.length === 0) ? true : (this.statuses.indexOf(parseInt(value.status)) >= 0),
                  hasUser = (this.users.length === 0) ? true : arrayContainsElement(this.users, value.user),
                  matchesTitle = (this.title == '') ? true : (value.title.toLowerCase().indexOf(this.title.toLowerCase()) >= 0);
-             if (hasStatus && hasUser && matchesTitle && value.week === this.weekNum) {
+             if (hasStatus && hasUser && matchesTitle) {
                  this.result.push(value);
              }
          }, items);

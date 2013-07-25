@@ -1,5 +1,9 @@
 todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users) {
 
+    //Manually clear storage
+    //todoStorage.put([]);
+    var historyDragIndex;
+
     $scope.statuses = ['defined', 'inprogress', 'complete', 'blocked'];
     $scope.search = {};
     $scope.search.title = "";
@@ -7,43 +11,16 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.search.users = [];
     $scope.filtering = false;
     $scope.users = users;
+
     var startWeek, endWeek;
 
     $scope.refreshHistory = function() {
+        var historyWeeks = [],
+            weekIndex;
         $scope.history = todoStorage.get();
-        startWeek = $scope.history.length ? $scope.history[0].week : -1;
-        endWeek = $scope.history.length ? $scope.history[$scope.history.length-1].week : -1;
-        $scope.weeks = getWeeksNames(startWeek, endWeek);
     };
 
     $scope.refreshHistory();
-
-    function getWeeksNames(startWeek, endWeek) {
-        var weeksNames = [],
-            week,
-            monday,
-            sunday;
-        if (startWeek >= 0 && endWeek >= 0)
-        {
-            for (var i = startWeek; i <= endWeek; i++) {
-                week = {};
-                monday = Date.today().setWeek(i);
-                sunday = new Date(monday).moveToDayOfWeek(0);
-
-                week.name = monday.toString("MMMM, d");
-                week.number = i;
-
-                if (monday.toString("M") === sunday.toString("M")) {
-                    week.name += sunday.toString(" - d");
-                } else {
-                    week.name += sunday.toString(" - MMMM, d");
-                }
-
-                weeksNames.push(week);
-            }
-        }
-        return weeksNames;
-    }
 
     $scope.searchByStatus = function(status) {
         if ($scope.search.statuses.indexOf(status)<0) {
@@ -107,5 +84,66 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.clearStorage = function() {
         todoStorage.put([]);
         $scope.refreshHistory();
+    }
+
+    function buildWeekArray() {
+        var temp = $scope.history,
+            start,
+            end,
+            weekNums = [],
+            weekNames = [],
+            history = [],
+            count = 0;
+        if (temp.length){
+            temp.sort(function(first, second) {
+                return first.week - second.week;
+            });
+            start = getYearWeekNum(temp[0].date);
+            end = getYearWeekNum(temp[temp.length-1].date);
+
+            for(var i = 0; i <= (end - start); i++) {
+                weekNums.push(start + i);
+                weekNames.push(getWeekName(getYearFromNum(start + i), getWeekFromNum(start + i)));
+                history[i] = [];
+                while (count <= (temp.length-1) && getYearWeekNum(temp[count].date) === (start + i)) {
+                    history[weekNums.length-1].push(temp[count]);
+                    count++;
+                }
+            }
+        }
+
+        $scope.storage = history;
+        $scope.weekNames = weekNames;
+        $scope.weekNums = weekNums;
+    }
+
+    buildWeekArray();
+
+    function getYearWeekNum(date) {
+        return new Date(date).getWeek() + 53 * (new Date(date).getFullYear());
+    }
+
+    function getYearFromNum(num) {
+        return Math.floor((num-1)/53);
+    }
+
+    function getWeekFromNum(num) {
+        return num%53 ? num%53 : 53;
+    }
+
+    function getWeekName(year, week) {
+        var name,
+            monday = new Date(year, 0, 1).setWeek(week),
+            sunday = new Date(monday).moveToDayOfWeek(0);
+
+        name = monday.toString("MMMM, d");
+
+        if (monday.toString("M") === sunday.toString("M")) {
+            name += sunday.toString(" - d");
+        } else {
+            name += sunday.toString(" - MMMM, d");
+        }
+
+        return name;
     }
 });
