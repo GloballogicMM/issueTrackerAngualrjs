@@ -25,7 +25,7 @@
         <h4>{{ week.name }}</h4>
 
         <div ng-repeat="item in history | historyFilter: search : week.number|orderBy: 'status'">
-            <button class="btn-link" ng-click="removeTodo(todo)"><i class="icon-remove"></i></button>
+
             <a href="#" ng-click="openViewDialog(item)"><div class="history {{ statuses[item.status]}}">
                 <h4>{{ item.title }}</h4>
                 <span class='estimate'>{{ item.time }}h</span>

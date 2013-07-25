@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/createEdit.css"/>
 <multiselect></multiselect>
 <section class="contentBlock" ng-show="!editing">
     <button style="float: right;" class="btn-link" ng-click="close()"><i class="icon-remove"></i></button>
@@ -10,7 +9,7 @@
         <li  ng-repeat="user in history.user">{{ users[user].name }}</li>
     </ul>
     <button class="btn" ng-click="editTodo(history)">Edit</button>
-    <button class="btn" data-ng-click="removeTodo(todo)">Delete</button>
+    <button class="btn" data-ng-click="removeTodo(history)">Delete</button>
 </section>
 <link rel="stylesheet" href="css/createEdit.css"/>
 <section ng-show="editing">

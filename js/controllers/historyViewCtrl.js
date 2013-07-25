@@ -24,13 +24,14 @@ todo.controller("historyViewCtrl", function($scope, dialog, todos, index, todoSt
         $scope.editing = false;
     };
 
-    $scope.cancelEdit = function (todo) {
+    $scope.cancelEdit = function () {
         $scope.close();
     };
 
     $scope.removeTodo = function (todo) {
         todos.splice(todos.indexOf(todo), 1);
         $scope.editing = false;
+        $scope.cancelEdit();
     };
 
     $scope.close = function() {
