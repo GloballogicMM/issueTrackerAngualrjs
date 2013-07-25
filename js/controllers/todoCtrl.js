@@ -18,7 +18,7 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
             week: newWeek,
             status: 0
         });
-        $scope.todos.sort(function(a,b) { return a.week - b.week;});
+        $scope.todos.sort(function(a,b) { return a.data - b.data;});
         todoStorage.put($scope.todos);
         $scope.newTodo = '';
         $scope.newDesc = '';
