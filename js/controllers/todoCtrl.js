@@ -1,5 +1,4 @@
 todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users) {
-    var oldTitle, oldDesc, oldDate, oldUsers, oldStatus, oldTime;
 
     $scope.todos = todoStorage.get();
     $scope.history = $scope.todos[$scope.todos.indexOf(history)];

@@ -1,7 +1,5 @@
 todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users) {
 
-    //todoStorage.put([]);
-
     $scope.statuses = ['defined', 'inprogress', 'complete', 'blocked'];
     $scope.search = {};
     $scope.search.title = "";
