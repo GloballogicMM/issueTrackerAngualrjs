@@ -68,9 +68,9 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
 
     $scope.openViewDialog = function(historyIndex, weekIndex) {
         var d = $dialog.dialog({
-            backdrop: false,
-            keyboard: false,
-            backdropClick: false,
+            backdrop: true,
+            keyboard: true,
+            backdropClick: true,
             templateUrl:  'partials/viewById.html',
             controller: 'historyViewCtrl',
             resolve: {
