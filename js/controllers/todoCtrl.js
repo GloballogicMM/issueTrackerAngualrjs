@@ -1,24 +1,38 @@
 todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users) {
 
     $scope.todos = todoStorage.get();
-    $scope.history = $scope.todos[$scope.todos.indexOf(history)];
+    console.log($scope.todos);
     $scope.users = users;
     $scope.editing = false;
 
     $scope.addTodo = function () {
         var newTodo = $scope.newTodo,
+            index,
             newWeek;
-        newWeek = Date.parse($scope.newDate).getWeek();
-        $scope.todos.push({
+        newWeek = getYearWeekNum($scope.newDate);
+
+        if (($scope.todos.weekNums.length === 0) || (!($scope.todos.weekNums.indexOf(newWeek) >= 0))) {
+            $scope.todos.weekNums.push(newWeek);
+            $scope.todos.weekNums.sort(function(first, second) {
+                return first-second;
+            });
+        }
+
+        index = $scope.todos.weekNums.indexOf(newWeek);
+
+        if (!$scope.todos.histories[index]) {
+            $scope.todos.histories[index] = [];
+        }
+
+        $scope.todos.histories[index].push({
             title: newTodo,
             desc: $scope.newDesc,
             date: Date.parse($scope.newDate),
             time: $scope.newTime,
             user: $scope.newUsers,
-            week: newWeek,
             status: 0
         });
-        $scope.todos.sort(function(a,b) { return a.data - b.data;});
+
         todoStorage.put($scope.todos);
         $scope.newTodo = '';
         $scope.newDesc = '';
@@ -40,5 +54,10 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
     $scope.removeTask= function (todo) {
         $scope.todos.task.splice($scope.todos.task.indexOf(todo), 1);
     };
+
+    function getYearWeekNum(date) {
+         return new Date(date).getWeek() + 53 * (new Date(date).getFullYear());
+    }
+
 
 });

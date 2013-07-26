@@ -1,26 +1,27 @@
-todo.controller("historyViewCtrl", function($scope, dialog, todos, index, todoStorage, users) {
-    $scope.history = todos[index];
+todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIndex, todoStorage, users) {
+    var storage = todoStorage.get();
+    $scope.history = storage.histories[weekIndex][historyIndex];
     $scope.users = users;
     $scope.editing = false;
 
-    $scope.editTodo = function (todo) {
+    $scope.editTodo = function () {
         $scope.editing = true;
-        $scope.newTitle = todo.title;
-        $scope.newDesc = todo.desc;
-        $scope.newUsers = todo.user;
-        $scope.newStatus = todo.status;
-        $scope.newTime = todo.time;
+        $scope.newTitle = $scope.history.title;
+        $scope.newDesc = $scope.history.desc;
+        $scope.newUsers = $scope.history.user;
+        $scope.newStatus = $scope.history.status;
+        $scope.newTime = $scope.history.time;
     };
 
-    $scope.doneEditing = function (todo) {
-        if (!todo.title) {
-            $scope.removeTodo(todo);
+    $scope.doneEditing = function () {
+        if (!$scope.newTitle) {
+            $scope.removeTodo();
         }
-        todo.title = $scope.newTitle;
-        todo.desc = $scope.newDesc;
-        todo.user = $scope.newUsers;
-        todo.status = $scope.newStatus;
-        todo.time = $scope.newTime;
+        $scope.history.title = $scope.newTitle;
+        $scope.history.desc = $scope.newDesc;
+        $scope.history.user = $scope.newUsers;
+        $scope.history.status = $scope.newStatus;
+        $scope.history.time = $scope.newTime;
         $scope.editing = false;
     };
 
@@ -29,21 +30,13 @@ todo.controller("historyViewCtrl", function($scope, dialog, todos, index, todoSt
     };
 
     $scope.removeTodo = function (todo) {
-        todos.splice(todos.indexOf(todo), 1);
+        storage.histories[weekIndex].splice(historyIndex, 1);
         $scope.editing = false;
         $scope.cancelEdit();
     };
 
     $scope.close = function() {
-        dialog.close(todos);
-    }
-
-    function findHistory(index, week) {
-        var count = 0;
-        for (var i = 0, n = todos.length; i < n; i++) {
-            if (todos[i].week === week) break;
-            count++;
-        }
-        return index + count;
+        todoStorage.put(storage);
+        dialog.close();
     }
 });
