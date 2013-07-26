@@ -13,10 +13,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.filtering = false;
     $scope.users = users;
     $scope.statuses = ["defined", "inprogress", "complete", "blocked"];
-    $scope.temp = {};
     $scope.storage = {};
-
-    var startWeek, endWeek;
 
     $scope.refreshHistory = function() {
         var storage = todoStorage.get();
