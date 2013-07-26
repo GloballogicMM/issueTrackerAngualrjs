@@ -7,7 +7,26 @@
     <ul class="unstyled">
         Assigned:
         <li  ng-repeat="user in history.user">{{ users[user].name }}</li>
+        <li data-ng-repeat="task in history.task">{{task.textTask}}</li>
     </ul>
+    <div class="control-group">
+        <div class="controls">
+            <ul class="unstyled">
+                <li ng-repeat="todo in history.task">
+                    <input type="checkbox" ng-model="todo.done">
+                    <span class="done-{{todo.done}}">{{todo.textTask}}</span>
+                    <a href="" ng-click="removeTask(todo)">delete</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="text" ng-model="textTask"  size="30" placeholder="add new task here">
+            <button class="btn-primary" ng-click="addTask()" >Add Task</button>
+        </div>
+    </div>
     <button class="btn" ng-click="editTodo(history)">Edit</button>
     <button class="btn" data-ng-click="removeTodo(history)">Delete</button>
 </section>
@@ -31,6 +50,13 @@
                 <div class="input-help">
                     <h4>Invalid Desc</h4>
                 </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDate">Date: </label>
+            <div class="controls">
+                <input type="date" data-ng-model="newDate" id="inputDate">
             </div>
         </div>
 

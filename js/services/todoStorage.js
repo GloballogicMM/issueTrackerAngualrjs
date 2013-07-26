@@ -1,5 +1,5 @@
 todo.factory('todoStorage', function () {
-	var STORAGE_ID = 'todos-angularjs';
+	var STORAGE_ID = 'todos-angularjs2';
 
 
 

@@ -39,4 +39,15 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         todoStorage.put(storage);
         dialog.close();
     }
+
+    $scope.addTask = function() {
+        $scope.todos.task.push({textTask:$scope.textTask, done:false});
+        todoStorage.put($scope.todos.task);
+        $scope.textTask = '';
+        console.log($scope.todos)
+    };
+
+    $scope.removeTask= function (todo) {
+        $scope.todos.task.splice($scope.todos.task.indexOf(todo), 1);
+    };
 });

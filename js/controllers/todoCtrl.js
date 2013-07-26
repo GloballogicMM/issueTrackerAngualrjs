@@ -58,5 +58,4 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
          return new Date(date).getWeek() + 53 * (new Date(date).getFullYear());
     }
 
-
 });
