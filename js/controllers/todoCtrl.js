@@ -1,7 +1,6 @@
 todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users) {
 
     $scope.todos = todoStorage.get();
-    console.log($scope.todos);
     $scope.users = users;
     $scope.editing = false;
 

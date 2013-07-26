@@ -1,7 +1,7 @@
 todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users) {
 
-    //Manually clear storage
-    if (!todoStorage.get()) {
+    //Set storage format if nothing set
+    if (!todoStorage.get().histories || !todoStorage.get().weekNums) {
         todoStorage.put({histories: [], weekNums: []});
     }
     var historyDragIndex;
