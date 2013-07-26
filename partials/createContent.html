@@ -1,6 +1,6 @@
 <section class="contentBlock">
     <h3>New Story</h3>
-    <form id="todo-form" data-ng-submit="addTodo()" class="row form-horizontal" novalidate>
+    <section class="row form-horizontal" novalidate>
         <div class="control-group">
             <label class="control-label" for="inputName">Title: </label>
             <div class="controls">
@@ -41,12 +41,31 @@
                 </select>
             </div>
         </div>
+        <div class="control-group">
+            <div class="controls">
+                <ul class="unstyled">
+                    <li ng-repeat="todo in todos.task">
+                        <input type="checkbox" ng-model="todo.done">
+                        <span class="done-{{todo.done}}">{{todo.textTask}}</span>
+                        <a href="" ng-click="removeTask(todo)">delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div ng-show="newTodo" class="control-group">
+            <div class="controls">
+                <input type="text" ng-model="textTask"  size="30" placeholder="add new task here">
+                <button class="btn-primary" ng-click="addTask()" >Add Task</button>
+            </div>
+        </div>
 
         <div class="control-group">
             <div class="controls">
-                <button type="submit" class="btn">Add</button>
+                <button ng-disabled="!newTodo" data-ng-click="addTodo()"  class="btn">Add</button>
             </div>
         </div>
-    </form>
+
+    </section>
 </section>
 <multiselect></multiselect>
