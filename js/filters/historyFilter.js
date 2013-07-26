@@ -22,9 +22,10 @@ todo.filter('historyFilter', function() {
 });
 
 function arrayContainsElement(array1, array2) {
-    if (array2.length === 0) {
-        return (array1.indexOf(array2) >= 0);
+    if (!array2) {
+        return false;
     }
+
     for (var i = 0, n = array2.length; i < n; i++) {
        if (array1.indexOf(parseInt(array2[i])) >= 0) {
            return true;

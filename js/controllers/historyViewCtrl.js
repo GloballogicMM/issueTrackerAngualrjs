@@ -22,6 +22,7 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         $scope.history.user = $scope.newUsers;
         $scope.history.status = $scope.newStatus;
         $scope.history.time = $scope.newTime;
+        todoStorage.put(storage);
         $scope.editing = false;
     };
 
@@ -31,12 +32,12 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
 
     $scope.removeTodo = function (todo) {
         storage.histories[weekIndex].splice(historyIndex, 1);
+        todoStorage.put(storage);
         $scope.editing = false;
         $scope.cancelEdit();
     };
 
     $scope.close = function() {
-        todoStorage.put(storage);
         dialog.close();
     }
 });
