@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/asideCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/asideCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/createContent.html" afterPath="$PROJECT_DIR$/partials/createContent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/todoCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/viewById.html" afterPath="$PROJECT_DIR$/partials/viewById.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374844284591" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374845231139" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374758666947" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
     <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374831048178" ignored="false" />
@@ -24,11 +21,11 @@
     <file path="/list.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561626616" ignored="false" />
     <file path="/new.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374566191483" ignored="false" />
     <file path="/editContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374584579814" ignored="false" />
-    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374830941297" ignored="false" />
+    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374845434584" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660051415" ignored="false" />
     <file path="/main.css" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374759731861" ignored="false" />
     <file path="/demo.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374671274769" ignored="false" />
-    <file path="/viewById.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374758365998" ignored="false" />
+    <file path="/viewById.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374845368826" ignored="false" />
     <file path="/createEdit.css" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374746101892" ignored="false" />
     <file path="/content.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374750431531" ignored="false" />
     <file path="/historyViewCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374752063815" ignored="false" />
@@ -54,19 +51,19 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="createContent.html" pinned="false" current="false" current-in-tab="true">
+            <file leaf-file-name="createContent.html" pinned="false" current="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/partials/createContent.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="38" column="139" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.26086956">
+                  <state line="65" column="57" selection-start="2762" selection-end="2762" vertical-scroll-proportion="-16.538462">
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="multiselect.diff" pinned="false" current="false" current-in-tab="false">
+            <file leaf-file-name="multiselect.diff" pinned="false" current="false" current-in-tab="true">
               <entry file="file://$USER_HOME$/Documents/multiselect.diff">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="110" column="140" selection-start="4139" selection-end="4262" vertical-scroll-proportion="0.0">
+                  <state line="9" column="48" selection-start="299" selection-end="307" vertical-scroll-proportion="0.23181818">
                     <folding />
                   </state>
                 </provider>
@@ -122,7 +119,7 @@
       <file leaf-file-name="viewById.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/viewById.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="139" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.33517495">
+            <state line="71" column="41" selection-start="2971" selection-end="2971" vertical-scroll-proportion="0.53222835">
               <folding />
             </state>
           </provider>
@@ -213,8 +210,8 @@
         <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
         <option value="$PROJECT_DIR$/js/controllers/asideCtrl.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/partials/createContent.html" />
         <option value="$PROJECT_DIR$/partials/viewById.html" />
+        <option value="$PROJECT_DIR$/partials/createContent.html" />
       </list>
     </option>
   </component>
@@ -521,7 +518,11 @@
       <created>1374758851219</created>
       <updated>1374758851219</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="debug multiselect">
+      <created>1374845234338</created>
+      <updated>1374845234338</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -548,6 +549,7 @@
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32750398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -562,7 +564,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -610,7 +611,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete status" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug multiselect" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -646,6 +647,7 @@
     <MESSAGE value="add Jasmine current" />
     <MESSAGE value="factory users" />
     <MESSAGE value="delete status" />
+    <MESSAGE value="debug multiselect" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -741,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/multiselect.diff">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="140" selection-start="4139" selection-end="4262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="27" selection-start="6166" selection-end="6166" vertical-scroll-proportion="0.0">
@@ -757,14 +752,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/createContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="139" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.26086956">
+        <state line="65" column="57" selection-start="2762" selection-end="2762" vertical-scroll-proportion="-16.538462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/multiselect.diff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="48" selection-start="299" selection-end="307" vertical-scroll-proportion="0.23181818">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/viewById.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="139" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.33517495">
+        <state line="71" column="41" selection-start="2971" selection-end="2971" vertical-scroll-proportion="0.53222835">
           <folding />
         </state>
       </provider>

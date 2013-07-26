@@ -36,7 +36,7 @@
         <div class="control-group">
             <label class="control-label" for="inputName">Name: </label>
             <div class="controls">
-                <input data-ng-model="newTitle" id="inputName" autofocus>
+                <input data-ng-model="newTitle" id="inputName" autofocus required>
                 <div class="input-help">
                     <h4>Invalid Name</h4>
                 </div>
@@ -56,7 +56,10 @@
         <div class="control-group">
             <label class="control-label" for="inputDate">Date: </label>
             <div class="controls">
-                <input type="date" data-ng-model="newDate" id="inputDate">
+                <input type="date" data-ng-model="newDate" id="inputDate" required>
+            </div>
+            <div class="input-help">
+                <h4>Add here date</h4>
             </div>
         </div>
 
