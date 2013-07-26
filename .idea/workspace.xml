@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ui/sortable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/asideCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/asideCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/createContent.html" afterPath="$PROJECT_DIR$/partials/createContent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/historyViewCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/historyViewCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/todoCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services/todoStorage.js" afterPath="$PROJECT_DIR$/js/services/todoStorage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/viewById.html" afterPath="$PROJECT_DIR$/partials/viewById.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374840649502" ignored="false" />
-    <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374844190880" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374844284591" ignored="false" />
+    <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374758666947" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
-    <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374840771806" ignored="false" />
+    <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374831048178" ignored="false" />
     <file path="$PROJECT_DIR$/../jasmin/SpecRunner.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374483152305" ignored="false" />
-    <file path="/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374755701928" ignored="false" />
+    <file path="/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374844913858" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374659522740" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/project.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561413701" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/list.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561626616" ignored="false" />
@@ -26,18 +24,18 @@
     <file path="/list.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374561626616" ignored="false" />
     <file path="/new.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374566191483" ignored="false" />
     <file path="/editContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374584579814" ignored="false" />
-    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374842107232" ignored="false" />
+    <file path="/createContent.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374830941297" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660051415" ignored="false" />
     <file path="/main.css" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374759731861" ignored="false" />
     <file path="/demo.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374671274769" ignored="false" />
-    <file path="/viewById.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374833640308" ignored="false" />
+    <file path="/viewById.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374758365998" ignored="false" />
     <file path="/createEdit.css" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374746101892" ignored="false" />
     <file path="/content.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374750431531" ignored="false" />
-    <file path="/historyViewCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374832802849" ignored="false" />
+    <file path="/historyViewCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374752063815" ignored="false" />
     <file path="/SpecRunner.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374754980121" ignored="false" />
     <file path="/users.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374756405701" ignored="false" />
     <file path="/status.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374758736200" ignored="false" />
-    <file path="/asideCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374839102681" ignored="false" />
+    <file path="/asideCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374844342131" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,16 @@
             <file leaf-file-name="createContent.html" pinned="false" current="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/partials/createContent.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="46" column="19" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.5543478">
+                  <state line="38" column="139" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.26086956">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="multiselect.diff" pinned="false" current="false" current-in-tab="false">
+              <entry file="file://$USER_HOME$/Documents/multiselect.diff">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="110" column="140" selection-start="4139" selection-end="4262" vertical-scroll-proportion="0.0">
                     <folding />
                   </state>
                 </provider>
@@ -79,36 +86,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="36" selection-start="1972" selection-end="1972" vertical-scroll-proportion="-16.153847">
+            <state line="27" column="49" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-3.3076923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sortable.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/sortable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="0" selection-start="4340" selection-end="4340" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todoCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todoCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.76632303">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validate.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/validate.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="23" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0">
+            <state line="20" column="27" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,25 +104,7 @@
       <file leaf-file-name="asideCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/asideCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="67" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todoStorage.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/services/todoStorage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="38" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="historyViewCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers/historyViewCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="9" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0">
+            <state line="3" column="67" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,26 +113,68 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="5" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+            <state line="149" column="27" selection-start="6166" selection-end="6166" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewById.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="viewById.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/viewById.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="14" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
+            <state line="77" column="139" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.33517495">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/content.html">
+      <file leaf-file-name="multiselectProperties.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/multiselectProperties.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="29" selection-start="1481" selection-end="1481" vertical-scroll-proportion="-14.192307">
+            <state line="21" column="9" selection-start="786" selection-end="786" vertical-scroll-proportion="-13.730769">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slider.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/slider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sortable.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/sortable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-dragdrop.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/angular-dragdrop.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-dragdrop.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/angular-dragdrop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,6 +187,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -187,22 +199,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/js/ui/multiselectProperties.js" />
+        <option value="$PROJECT_DIR$/js/ui/multiselectProperties.html" />
+        <option value="$PROJECT_DIR$/js/controllers/historyViewCtrl.js" />
         <option value="$PROJECT_DIR$/partials/content.html" />
         <option value="$PROJECT_DIR$/js/ui/multiselect.js" />
         <option value="$PROJECT_DIR$/SpecRunner.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/services/users.js" />
         <option value="$PROJECT_DIR$/js/services/status.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/validate.css" />
-        <option value="$PROJECT_DIR$/js/controllers/historyViewCtrl.js" />
-        <option value="$PROJECT_DIR$/js/services/todoStorage.js" />
-        <option value="$PROJECT_DIR$/js/controllers/asideCtrl.js" />
-        <option value="$PROJECT_DIR$/partials/viewById.html" />
-        <option value="$PROJECT_DIR$/js/ui/sortable.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/partials/createContent.html" />
         <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
+        <option value="$PROJECT_DIR$/js/controllers/asideCtrl.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/partials/createContent.html" />
+        <option value="$PROJECT_DIR$/partials/viewById.html" />
       </list>
     </option>
   </component>
@@ -267,20 +279,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="issueTrackerAngualrjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -314,6 +312,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -487,11 +521,7 @@
       <created>1374758851219</created>
       <updated>1374758851219</updated>
     </task>
-    <task id="LOCAL-00024" summary="add tasks to create">
-      <created>1374831356335</created>
-      <updated>1374831356335</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -522,7 +552,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20906201" sideWeight="0.9602544" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19157393" sideWeight="0.9602544" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -580,7 +610,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tasks to create" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete status" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -616,30 +646,16 @@
     <MESSAGE value="add Jasmine current" />
     <MESSAGE value="factory users" />
     <MESSAGE value="delete status" />
-    <MESSAGE value="add tasks to create" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/vendor/jasmine-1.3.1/jasmine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/vendor/jasmine-1.3.1/jasmine-html.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/multiselect.diff">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="30" selection-start="2521" selection-end="2521" vertical-scroll-proportion="1.6766169" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/services/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" />
+        <state line="8" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
@@ -656,74 +672,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/services/todoStorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/asideCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="67" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/viewById.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="14" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui/sortable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="0" selection-start="4340" selection-end="4340" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="1481" selection-end="1481" vertical-scroll-proportion="-14.192307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="36" selection-start="1972" selection-end="1972" vertical-scroll-proportion="-16.153847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/createContent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="19" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.5543478">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/historyViewCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0">
+        <state line="34" column="6" selection-start="869" selection-end="1021" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.76632303">
+        <state line="20" column="27" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/asideCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="67" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="49" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-3.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ui/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ui/sortable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ui/angular-dragdrop.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ui/angular-dragdrop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ui/multiselectProperties.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="9" selection-start="786" selection-end="786" vertical-scroll-proportion="-13.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/multiselect.diff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="140" selection-start="4139" selection-end="4262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="27" selection-start="6166" selection-end="6166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/createContent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="139" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.26086956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/viewById.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="139" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.33517495">
           <folding />
         </state>
       </provider>

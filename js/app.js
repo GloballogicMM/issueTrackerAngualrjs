@@ -117,11 +117,38 @@ todo.value('uiSliderConfig',{}).directive('uiSlider', ['uiSliderConfig', '$timeo
     };
 }]);
 
-todo.directive('multiselect', function(){
+todo.directive('multiselect', function($compile){
     return {
-        restrict:'E',
-        transclude: true,
-        templateUrl:'js/ui/multiselectProperties.html'
+        restrict:'A',
+        link: function (scope, elm, attrs, ctrl){
+            elm.multiselect({
+                buttonClass: 'btn',
+                                buttonWidth: 'auto',
+                                buttonContainer: '<div class="btn-group" />',
+                                maxHeight: false,
+                                buttonText: function(options) {
+                                    if (options.length == 0) {
+                                        return 'None selected <b class="caret"></b>';
+                                        }
+                                    else if (options.length > 3) {
+                                            return options.length + ' selected  <b class="caret"></b>';
+                                        }
+                                    else {
+                                            var selected = '';
+                                            options.each(function() {
+                                                    selected += $(this).text() + ', ';
+                                                });
+                                            return selected.substr(0, selected.length -2) + ' <b class="caret"></b>';
+                                        }
+                                }
+                        });
+
+                    scope.$watch(attrs['model'], function(users) {
+                            scope.$evalAsync(function() {
+                                    elm.multiselect( 'rebuild' );
+                                })
+                        });
+        }
     }
 });
 

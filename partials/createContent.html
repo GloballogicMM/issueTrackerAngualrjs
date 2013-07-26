@@ -36,7 +36,7 @@
         <div class="control-group">
             <label class="control-label" for="inputUsers">Users: </label>
             <div class="controls">
-                <select class="multiselect" multiple="multiple" ng-multi ng-model="newUsers" id="inputUsers">
+                <select class="multiselect" multiple="multiple" ng-multi ng-model="newUsers" id="inputUsers" x-multiselect x-model="users">
                     <option data-ng-repeat="user in users" value="{{user.number}}">{{user.name}}</option>
                 </select>
             </div>

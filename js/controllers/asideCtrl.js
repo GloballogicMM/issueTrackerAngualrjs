@@ -1,6 +1,6 @@
 todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users) {
 
-    //Set storage format if nothing set
+    //Manually clear storage
     if (!todoStorage.get().histories || !todoStorage.get().weekNums) {
         todoStorage.put({histories: [], weekNums: []});
     }
@@ -13,7 +13,10 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.filtering = false;
     $scope.users = users;
     $scope.statuses = ["defined", "inprogress", "complete", "blocked"];
+    $scope.temp = {};
     $scope.storage = {};
+
+    var startWeek, endWeek;
 
     $scope.refreshHistory = function() {
         var storage = todoStorage.get();
@@ -64,9 +67,9 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
 
     $scope.openViewDialog = function(historyIndex, weekIndex) {
         var d = $dialog.dialog({
-            backdrop: true,
-            keyboard: true,
-            backdropClick: true,
+            backdrop: false,
+            keyboard: false,
+            backdropClick: false,
             templateUrl:  'partials/viewById.html',
             controller: 'historyViewCtrl',
             resolve: {

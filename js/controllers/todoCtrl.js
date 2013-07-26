@@ -1,6 +1,7 @@
 todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users) {
 
     $scope.todos = todoStorage.get();
+    console.log($scope.todos);
     $scope.users = users;
     $scope.editing = false;
 
@@ -57,5 +58,6 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
     function getYearWeekNum(date) {
          return new Date(date).getWeek() + 53 * (new Date(date).getFullYear());
     }
+
 
 });
