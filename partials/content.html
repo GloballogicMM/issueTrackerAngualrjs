@@ -22,13 +22,9 @@
     <button class="btn btn-danger" ng-click="clearStorage()" ng-show="!filtering">Clear storage</button>
 </aside>
 <article>
-    <div ng-repeat="week in weekNames" ng-model="storage.histories" data-drop="true"
-         jqyoui-droppable="{multiple:true, onDrop: 'dropItem'}">
+    <div ng-repeat="week in weekNames">
         <h4>{{ week }}</h4>
-        <div ng-repeat="item in storage.histories[$index] | historyFilter: search|orderBy: 'status'"
-             ng-model="storage.histories"
-             data-drag="true" data-jqyoui-options="{revert: 'invalid'}"
-             jqyoui-draggable="{index: 0, animate:true, onStart: 'startDrag'}">
+        <div ng-repeat="item in storage.histories[$index] | historyFilter: search|orderBy: 'status'">
             <a href="#" ng-click="openViewDialog($index, $parent.$index)"><div class="history {{ statuses[item.status]}}">
                 <h4>{{ item.title }}</h4>
                 <span class='estimate'>{{ item.time }}h</span>
