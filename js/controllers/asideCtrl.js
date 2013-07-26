@@ -23,7 +23,6 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     };
 
     $scope.refreshHistory();
-    console.log($scope.storage);
 
     $scope.searchByStatus = function(status) {
         if ($scope.search.statuses.indexOf(status)<0) {
