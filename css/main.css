@@ -37,6 +37,7 @@ h4 {
     width: 165px;
     text-align: center;
     line-height: 75px;
+    clear: both;
 }
 
 .estimate {

@@ -1,4 +1,4 @@
-todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users, statuses) {
+todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, users) {
 
     //Manually clear storage
     //todoStorage.put([]);
@@ -10,7 +10,8 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.search.users = [];
     $scope.filtering = false;
     $scope.users = users;
-    $scope.statuses = statuses;
+    $scope.statuses = ["defined", "inprogress", "complete", "blocked"];
+    $scope.temp = {};
 
     var startWeek, endWeek;
 
@@ -96,17 +97,17 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
             history = [],
             count = 0;
         if (temp.length){
-            temp.sort(function(first, second) {
+            temp.sort(function (first, second) {
                 return first.week - second.week;
             });
-            start = getYearWeekNum(temp[0].date);
-            end = getYearWeekNum(temp[temp.length-1].date);
+            start = temp[0].week;
+            end = temp[temp.length-1].week;
 
             for(var i = 0; i <= (end - start); i++) {
                 weekNums.push(start + i);
                 weekNames.push(getWeekName(getYearFromNum(start + i), getWeekFromNum(start + i)));
                 history[i] = [];
-                while (count <= (temp.length-1) && getYearWeekNum(temp[count].date) === (start + i)) {
+                while (count <= (temp.length-1) && temp[count].week === (start + i)) {
                     history[weekNums.length-1].push(temp[count]);
                     count++;
                 }
@@ -118,8 +119,8 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
         $scope.weekNums = weekNums;
     }
 
-    function getYearWeekNum(date) {
-        return new Date(date).getWeek() + 53 * (new Date(date).getFullYear());
+    function sortFunc(first, second) {
+        return first.date - second.date;
     }
 
     function getYearFromNum(num) {
@@ -146,18 +147,24 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
         return name;
     }
 
-    $scope.startDrag = function(history) {
-    historyDragIndex = $scope.history.indexOf(history);
+    $scope.startDrag = function(event, ui) {
+        console.log(event);
     }
 
-    $scope.dropDrag = function(weekNum) {
-    var item = $scope.history[historyDragIndex];
-    item.date = Date.today().setWeek(weekNum);
-    item.week = weekNum;
+    $scope.dropItem = function(event, ui) {
+        console.log(angular.element(ui.draggable).data('index'));/*
+        var item = $scope.history[historyDragIndex],
+            weekNum = $scope.weekNums[index],
+            year = getYearFromNum(weekNum),
+            week = getWeekFromNum(weekNum);
+        item.date = new Date(year, 0, 1).setWeek(week);
+        item.week = weekNum;
 
-    $scope.history.sort(function(a, b) {
-    return a.week - b.week;
-    });
-    todoStorage.put($scope.history);
+
+        $scope.history.sort(function(first, second) {
+            return first.date - second.date;
+        });
+        todoStorage.put($scope.history);
+        $scope.refreshHistory();   */
     }
 });

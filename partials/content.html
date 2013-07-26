@@ -19,19 +19,22 @@
     </div>
     <button class="btn" ng-click="clearFilters()">Clear filters</button>
     <br><br>
-    <button class="btn" ng-click="clearStorage()">Clear storage</button>
+    <button class="btn btn-danger" ng-click="clearStorage()" ng-show="!filtering">Clear storage</button>
 </aside>
 <article>
-    <div ng-repeat="week in weekNames" ng-model="temp" data-drop="true" jqyoui-droppable="{multiple:true, onDrop: 'dropDrag(week.number)'}">
+    <div ng-repeat="week in weekNames" ng-model="storage[$index]" data-drop="true"
+         jqyoui-droppable="{multiple:true, onDrop: 'dropItem'}">
         <h4>{{ week }}</h4>
-        <div ng-repeat="item in storage[$index] | historyFilter: search|orderBy: 'status'">
-            <a href="#" ng-click="openViewDialog(item)"><div class="history {{ statuses[item.status].shortName}}">
+        <div ng-repeat="item in storage[$index] | historyFilter: search|orderBy: 'status'"
+             ng-model="storage[$index]"
+             data-drag="true" data-jqyoui-options="{revert: 'invalid'}"
+             jqyoui-draggable="{index: 0, animate:true, onStart: 'startDrag'}">
+            <a href="#" ng-click="openViewDialog(item)"><div class="history {{ statuses[item.status]}}">
                 <h4>{{ item.title }}</h4>
                 <span class='estimate'>{{ item.time }}h</span>
                 <p>{{ users[item.user[0]].name }} ... </p>
             </div></a>
-            <div ng-model="temp" data-drag="false" jqyoui-draggable ng-show="false"></div>
         </div>
     </div>
-    <div style="clear: both;" class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
+    <div class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
 </article>
