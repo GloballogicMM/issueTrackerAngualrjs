@@ -82,3 +82,7 @@ h4 {
     text-decoration: line-through;
     color: grey;
 }
+
+.week {
+    min-height: 95px;
+}

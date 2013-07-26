@@ -15,6 +15,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.statuses = ["defined", "inprogress", "complete", "blocked"];
     $scope.temp = {};
     $scope.storage = {};
+    $scope.data=[[], []];
 
     var startWeek, endWeek;
 
@@ -126,4 +127,21 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
 
         return name;
     }
+
+    var oldWeekIndex;
+    var oldItemIndex;
+
+    $scope.startDrag = function(event, ui) {
+        oldWeekIndex = this.$parent.$index;
+        oldItemIndex = this.$index;
+    }
+
+    $scope.dropItem = function(event, ui) {
+        var newWeekIndex = this.$index;
+
+        $scope.storage.histories[oldWeekIndex].splice(oldItemIndex, 1);
+        todoStorage.put($scope.storage);
+    }
 });
+
+
