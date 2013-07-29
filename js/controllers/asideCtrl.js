@@ -114,13 +114,15 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
             monday = new Date(year, 0, 1).setWeek(week),
             sunday = new Date(monday).moveToDayOfWeek(0);
 
-        name = monday.toString("MMMM, d");
+        name = monday.toString("MMMM d - ");
 
         if (monday.toString("M") === sunday.toString("M")) {
-            name += sunday.toString(" - d");
+            name += sunday.toString("d,");
         } else {
-            name += sunday.toString(" - MMMM, d");
+            name += sunday.toString("MMMM d,");
         }
+
+        name += " " + year;
 
         return name;
     }
@@ -137,6 +139,9 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
         var newWeekIndex = this.$index;
 
         $scope.storage.histories[oldWeekIndex].splice(oldItemIndex, 1);
+        $scope.storage.histories[newWeekIndex].sort(function(first, second) {
+            return first.status - second.status;
+        })
         todoStorage.put($scope.storage);
         $scope.refreshHistory();
     };

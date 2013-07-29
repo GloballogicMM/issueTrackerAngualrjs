@@ -37,7 +37,7 @@ h4 {
     width: 165px;
     text-align: center;
     line-height: 75px;
-    clear: both;
+    clear: left;
 }
 
 .estimate {
@@ -85,4 +85,5 @@ h4 {
 
 .week {
     min-height: 95px;
+    clear: left;
 }
