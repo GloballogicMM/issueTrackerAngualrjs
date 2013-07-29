@@ -1,16 +1,17 @@
 <button style="float: right;" class="btn-link" ng-click="close()"><i class="icon-remove"></i></button>
 <section class="contentBlock" ng-show="!editing">
-    <h4>{{ history.title }}</h4>
+    <h3>{{ history.title }}</h3>
     <p>{{ history.desc }}</p>
-    <p>Estimate: {{ history.time }}h</p>
+    <p><strong>Estimate:</strong> {{ history.time }}h</p>
     <ul class="unstyled">
-        Assigned:
+        <strong>Assigned:</strong>
         <li  ng-repeat="user in history.user">{{ users[user].name }}</li>
     </ul>
 
     <div class="control-group">
         <div class="controls">
             <ul class="unstyled" ui-sortable="sortableOptions" ng-model="history.task">
+                <strong>Tasks:</strong>
                 <li ng-repeat="todo in history.task" ng-model="todo">
                     <input type="checkbox" ng-model="todo.done">
                     <span class="done-{{todo.done}}">{{todo.textTask}}</span>
