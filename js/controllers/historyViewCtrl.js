@@ -48,19 +48,19 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         dialog.close();
     };
 
-   $scope.updateTasks = function() {
+   function updateTasks() {
         todoStorage.put(storage);
-    };
+    }
 
     $scope.sortableOptions = {
         stop: function(e, ui) {
-            $scope.updateTasks();
+            updateTasks();
         }
     };
 
     $scope.addTask = function() {
         $scope.history.task.push({textTask:$scope.textTask, done:false});
-        $scope.updateTasks();
+        updateTasks();
         $scope.textTask = '';
     };
 
