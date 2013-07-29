@@ -56,6 +56,11 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
     function getYearWeekNum(date) {
          return new Date(date).getWeek() + 53 * (new Date(date).getFullYear());
     }
+//example
+    $scope.items = ["One", "Two", "Three"];
 
+    $scope.sortableOptions = {
+        disabled: true
+    };
 
 });

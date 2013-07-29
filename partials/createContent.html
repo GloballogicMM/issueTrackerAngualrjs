@@ -30,6 +30,9 @@
             <div class="controls" >
                 <input type="number" min="0" max="50" data-ng-model="newTime" id="inputTime">
                 <div class="timeSlider" ui-slider min="0" max="50" ng-model="newTime"></div>
+                <div class="input-help">
+                    <h4>Invalid Time</h4>
+                </div>
             </div>
         </div>
 
@@ -44,7 +47,7 @@
 
         <div class="control-group">
             <div class="controls">
-                <ul class="unstyled" ui-sortable ng-model="todos.task">
+                <ul ui-sortable ng-model="todo.done" class="unstyled" ui-sortable ng-model="todos.task">
                     <li ng-repeat="todo in todos.task" >
                         <input type="checkbox" ng-model="todo.done">
                         <span class="done-{{todo.done}}">{{todo.textTask}}</span>
@@ -69,4 +72,3 @@
 
     </section>
 </section>
-<multiselect></multiselect>
