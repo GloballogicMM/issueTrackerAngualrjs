@@ -48,6 +48,8 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         dialog.close();
     };
 
+    $scope.history.task = [];
+
     $scope.addTask = function() {
         $scope.history.task.push({textTask:$scope.textTask, done:false});
         todoStorage.put(storage);
