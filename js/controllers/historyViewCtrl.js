@@ -16,7 +16,7 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
     $scope.doneEditing = function () {
         if (!$scope.newTitle) {
             $scope.removeTodo();
-        }
+        } else {
         $scope.history.title = $scope.newTitle;
         $scope.history.desc = $scope.newDesc;
         $scope.history.user = $scope.newUsers;
@@ -25,7 +25,7 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         storage.histories[weekIndex].sort(function(first, second) {
             return first.status - second.status;
         });
-        todoStorage.put(storage);
+        todoStorage.put(storage);}
         $scope.editing = false;
     };
 
@@ -48,15 +48,24 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         dialog.close();
     };
 
-    $scope.history.task = [];
+   $scope.updateTasks = function() {
+        todoStorage.put(storage);
+    };
+
+    $scope.sortableOptions = {
+        stop: function(e, ui) {
+            $scope.updateTasks();
+        }
+    };
 
     $scope.addTask = function() {
         $scope.history.task.push({textTask:$scope.textTask, done:false});
-        todoStorage.put(storage);
+        $scope.updateTasks();
         $scope.textTask = '';
     };
 
     $scope.removeTask= function (todo) {
         $scope.history.task.splice($scope.history.task.indexOf(todo), 1);
+        todoStorage.put(storage);
     };
 });
