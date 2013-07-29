@@ -10,17 +10,15 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
             newWeek;
         newWeek = getYearWeekNum($scope.newDate);
 
+        index = $scope.todos.weekNums.indexOf(newWeek);
+
         if (($scope.todos.weekNums.length === 0) || (!($scope.todos.weekNums.indexOf(newWeek) >= 0))) {
             $scope.todos.weekNums.push(newWeek);
             $scope.todos.weekNums.sort(function(first, second) {
                 return first-second;
             });
-        }
-
-        index = $scope.todos.weekNums.indexOf(newWeek);
-
-        if (!$scope.todos.histories[index]) {
-            $scope.todos.histories[index] = [];
+            index = $scope.todos.weekNums.indexOf(newWeek);
+            $scope.todos.histories.splice(index, 0, []);
         }
 
         $scope.todos.histories[index].push({
