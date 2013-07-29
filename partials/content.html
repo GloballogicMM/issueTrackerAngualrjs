@@ -22,6 +22,7 @@
     <button class="btn btn-danger" ng-click="clearStorage()" ng-show="!filtering">Clear storage</button>
 </aside>
 <article>
+    <div class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
     <div class="week" ng-repeat="week in weekNames" ng-model="storage.histories[$index]" data-drop="true"
          jqyoui-droppable="{multiple: true, onDrop: 'dropItem' }">
         <h4>{{ week }}</h4>
@@ -35,7 +36,5 @@
                 <p>{{ users[item.user[0]].name }} ... </p>
             </div></a>
         </div>
-        <div style="clear: left;display:none"></div>
     </div>
 </article>
-<div class="history new btn clearfix" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
