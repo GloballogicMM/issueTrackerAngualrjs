@@ -14,7 +14,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.statuses = ["defined", "inprogress", "complete", "blocked"];
     $scope.temp = {};
     $scope.storage = {};
-    $scope.data=[[], []];
+    $scope.editing = false;
 
     $scope.refreshHistory = function() {
         var storage = todoStorage.get();
@@ -79,8 +79,12 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
                 }
             }
         });
+
+        $scope.editing = true;
+
         d.open().then(function () {
             $scope.refreshHistory();
+            $scope.editing = false;
         });
     };
 

@@ -23,7 +23,7 @@
 </aside>
 <article>
     <div class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
-    <div class="week" ng-repeat="week in weekNames" ng-model="storage.histories[$index]" data-drop="true"
+    <div class="week" ng-repeat="week in weekNames" ng-model="storage.histories[$index]" data-drop="!editing"
          jqyoui-droppable="{multiple: true, onDrop: 'dropItem' }">
         <h4>{{ week }}</h4>
         <div ng-repeat="item in storage.histories[$index] | historyFilter: search"
