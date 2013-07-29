@@ -10,8 +10,8 @@
 
     <div class="control-group">
         <div class="controls">
+            <strong>Tasks:</strong>
             <ul class="unstyled" ui-sortable="sortableOptions" ng-model="history.task">
-                <strong>Tasks:</strong>
                 <li ng-repeat="todo in history.task" ng-model="todo">
                     <input type="checkbox" ng-model="todo.done">
                     <span class="done-{{todo.done}}">{{todo.textTask}}</span>
