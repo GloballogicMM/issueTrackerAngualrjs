@@ -11,7 +11,7 @@
     <div class="control-group">
         <div class="controls">
             <ul class="unstyled" ui-sortable ng-model="history.task">
-                <li ng-repeat="todo in hsitory.task" >
+                <li ng-repeat="todo in history.task" >
                     <input type="checkbox" ng-model="todo.done">
                     <span class="done-{{todo.done}}">{{todo.textTask}}</span>
                     <a href="" ng-click="removeTask(todo)">delete</a>
@@ -20,8 +20,15 @@
         </div>
     </div>
 
+    <div class="control-group">
+        <div class="controls">
+            <input type="text" ng-model="textTask"  size="30" placeholder="add new task here">
+            <button class="btn-primary" ng-click="addTask()" >Add Task</button>
+        </div>
+    </div>
+
     <button class="btn" ng-click="editTodo(history)">Edit</button>
-    <button class="btn" data-ng-click="removeTodo(history)">Delete</button>
+    <button class="btn" data-ng-click="removeTodo()">Delete</button>
 </section>
 <section ng-show="editing">
     <h3>Edit cart</h3>

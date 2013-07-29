@@ -141,7 +141,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
         $scope.storage.histories[oldWeekIndex].splice(oldItemIndex, 1);
         $scope.storage.histories[newWeekIndex].sort(function(first, second) {
             return first.status - second.status;
-        })
+        });
         todoStorage.put($scope.storage);
         $scope.refreshHistory();
     };

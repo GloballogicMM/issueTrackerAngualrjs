@@ -1,7 +1,6 @@
 todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIndex, todoStorage, users) {
     var storage = todoStorage.get();
     $scope.history = storage.histories[weekIndex][historyIndex];
-    $scope.histor = storage.histories.task[historyIndex];
     $scope.users = users;
     $scope.editing = false;
 
@@ -34,16 +33,20 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         $scope.editing = false;
     };
 
-    $scope.removeTodo = function (todo) {
+    $scope.removeTodo = function () {
         storage.histories[weekIndex].splice(historyIndex, 1);
+        if (storage.histories[weekIndex].length === 0) {
+            storage.histories.splice(weekIndex, 1);
+            storage.weekNums.splice(weekIndex, 1);
+        }
         todoStorage.put(storage);
         $scope.editing = false;
-        $scope.cancelEdit();
+        $scope.close();
     };
 
     $scope.close = function() {
         dialog.close();
-    }
+    };
 
     $scope.addTask = function() {
         $scope.history.task.push({textTask:$scope.textTask, done:false});
