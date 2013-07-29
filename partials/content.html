@@ -25,7 +25,7 @@
     <div class="week" ng-repeat="week in weekNames" ng-model="storage.histories[$index]" data-drop="true"
          jqyoui-droppable="{multiple: true, onDrop: 'dropItem' }">
         <h4>{{ week }}</h4>
-        <div ng-repeat="item in storage.histories[$index] | historyFilter: search | orderBy: 'status'"
+        <div ng-repeat="item in storage.histories[$index] | historyFilter: search"
              ng-model="item" data-drag="true"
              jqyoui-draggable="{index: {{ $index }}, animate: true, onStart:'startDrag'}"
              data-jqyoui-options="{revert: 'invalid'}">

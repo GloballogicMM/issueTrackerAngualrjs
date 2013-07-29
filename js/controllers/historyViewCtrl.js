@@ -22,6 +22,9 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         $scope.history.user = $scope.newUsers;
         $scope.history.status = $scope.newStatus;
         $scope.history.time = $scope.newTime;
+        storage.histories[weekIndex].sort(function(first, second) {
+            return first.status - second.status;
+        });
         todoStorage.put(storage);
         $scope.editing = false;
     };
