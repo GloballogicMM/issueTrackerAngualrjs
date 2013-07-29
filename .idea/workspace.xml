@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="Fixed drag and drop bug">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/issueTrackerAngualrjs.iml" afterPath="$PROJECT_DIR$/.idea/issueTrackerAngualrjs.iml" />
+    <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/viewById.html" afterPath="$PROJECT_DIR$/partials/viewById.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375087302190" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375093425974" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374758666947" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
     <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375085025698" ignored="false" />
@@ -24,7 +24,7 @@
     <file path="$PROJECT_DIR$/../untitled/app.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374660051415" ignored="false" />
     <file path="/main.css" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374759731861" ignored="false" />
     <file path="/demo.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374671274769" ignored="false" />
-    <file path="/viewById.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374845368826" ignored="false" />
+    <file path="/viewById.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375093701808" ignored="false" />
     <file path="/createEdit.css" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374746101892" ignored="false" />
     <file path="/content.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375085224783" ignored="false" />
     <file path="/historyViewCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375087093707" ignored="false" />
@@ -54,7 +54,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="27" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-15.038462">
+            <state line="23" column="27" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
       <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="81" selection-start="1336" selection-end="1336" vertical-scroll-proportion="-11.769231">
+            <state line="27" column="27" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,7 +72,7 @@
       <file leaf-file-name="todoCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="11" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+            <state line="39" column="10" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,26 +81,28 @@
       <file leaf-file-name="historyViewCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/historyViewCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="48" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
+            <state line="29" column="6" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="asideCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="asideCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/asideCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="48" selection-start="4289" selection-end="4289" vertical-scroll-proportion="4.1105356">
+            <state line="140" column="48" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewById.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="viewById.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/viewById.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="51" column="22" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.63297874">
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#form#0;n#section#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +110,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="19" selection-start="497" selection-end="509" vertical-scroll-proportion="0.0">
+            <state line="39" column="16" selection-start="497" selection-end="509" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,22 +154,22 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/validate.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/partials/viewById.html" />
         <option value="$PROJECT_DIR$/partials/createContent.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/partials/content.html" />
-        <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
         <option value="$PROJECT_DIR$/js/controllers/historyViewCtrl.js" />
         <option value="$PROJECT_DIR$/js/controllers/asideCtrl.js" />
+        <option value="$PROJECT_DIR$/js/controllers/todoCtrl.js" />
+        <option value="$PROJECT_DIR$/partials/viewById.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="54" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -338,17 +340,6 @@
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="9f3c938b-cea7-429e-9b73-c4ad21cd6a00">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
-  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\issueTrackerAngualrjs\js\vendor" />
@@ -359,14 +350,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -509,7 +492,11 @@
       <created>1375087305565</created>
       <updated>1375087305565</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="don't callback">
+      <created>1375093430447</created>
+      <updated>1375093430448</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -533,14 +520,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32703003" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1764706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19135477" sideWeight="0.67296994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19475357" sideWeight="0.8235294" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -548,7 +536,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32750398" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -582,7 +569,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -598,7 +585,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed ordering by statuses once more" />
+    <option name="LAST_COMMIT_MESSAGE" value="don't callback" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -612,7 +599,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="fixed add bugs" />
     <MESSAGE value="create new Controller" />
     <MESSAGE value="delete new.html&#10;" />
     <MESSAGE value="add validation css&#10;" />
@@ -637,11 +623,19 @@
     <MESSAGE value="Fixed drag and drop bug" />
     <MESSAGE value="Fixed ordering by status" />
     <MESSAGE value="Fixed ordering by statuses once more" />
+    <MESSAGE value="don't callback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/ui/multiselectProperties.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="9" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/services/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" />
@@ -650,11 +644,6 @@
     <entry file="file://$PROJECT_DIR$/css/validate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="113" column="23" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ui/sortable.js">
@@ -689,52 +678,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/viewById.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="19" selection-start="497" selection-end="509" vertical-scroll-proportion="0.0">
+        <state line="39" column="16" selection-start="497" selection-end="509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="11" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+        <state line="23" column="27" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="81" selection-start="1336" selection-end="1336" vertical-scroll-proportion="-11.769231">
+        <state line="27" column="27" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/historyViewCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="48" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
+        <state line="29" column="6" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/asideCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="48" selection-start="4289" selection-end="4289" vertical-scroll-proportion="4.1105356">
+        <state line="140" column="48" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/viewById.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="22" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.63297874">
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#form#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
