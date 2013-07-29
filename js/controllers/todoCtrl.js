@@ -37,7 +37,7 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
         $scope.newDesc = '';
         $scope.newDate = '';
         $scope.newUsers = '';
-        $scope.newTime = '';
+        //$scope.newTime = '';
         dialog.close();
     };
 
