@@ -1,4 +1,4 @@
-var todo = angular.module('todo', ['ui.bootstrap', 'ngDragDrop']);
+var todo = angular.module('todo', ['ui.bootstrap', 'ngDragDrop', 'ui.sortable']);
 
 todo.directive('createcontent', function () {
     return {
