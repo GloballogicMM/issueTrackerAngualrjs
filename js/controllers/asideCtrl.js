@@ -63,7 +63,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
         });
     };
 
-    $scope.openViewDialog = function (historyIndex, weekIndex) {
+    $scope.openViewDialog = function (history, weekIndex) {
         var d = $dialog.dialog({
             backdrop: true,
             keyboard: true,
@@ -72,7 +72,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
             controller: 'historyViewCtrl',
             resolve: {
                 historyIndex: function () {
-                    return historyIndex;
+                    return $scope.storage.histories[weekIndex].indexOf(history);
                 },
                 weekIndex: function () {
                     return weekIndex;
