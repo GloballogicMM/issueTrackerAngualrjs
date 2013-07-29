@@ -28,6 +28,7 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
             desc: $scope.newDesc,
             time: $scope.newTime,
             user: $scope.newUsers,
+            task: [],
             status: 0
         });
 
@@ -38,19 +39,6 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
         $scope.newUsers = '';
         $scope.newTime = '';
         dialog.close();
-    };
-
-    $scope.todos.task = [];
-
-    $scope.addTask = function() {
-        $scope.todos.task.push({textTask:$scope.textTask, done:false});
-        todoStorage.put($scope.todos.task);
-        $scope.textTask = '';
-        console.log($scope.todos)
-    };
-
-    $scope.removeTask= function (todo) {
-        $scope.todos.task.splice($scope.todos.task.indexOf(todo), 1);
     };
 
     function getYearWeekNum(date) {

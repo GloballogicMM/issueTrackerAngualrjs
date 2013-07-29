@@ -30,7 +30,7 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
     };
 
     $scope.cancelEdit = function () {
-        $scope.close();
+        $scope.editing = false;
     };
 
     $scope.removeTodo = function (todo) {
@@ -45,13 +45,12 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
     }
 
     $scope.addTask = function() {
-        $scope.todos.task.push({textTask:$scope.textTask, done:false});
-        todoStorage.put($scope.todos.task);
+        $scope.history.task.push({textTask:$scope.textTask, done:false});
+        todoStorage.put(storage);
         $scope.textTask = '';
-        console.log($scope.todos)
     };
 
     $scope.removeTask= function (todo) {
-        $scope.todos.task.splice($scope.todos.task.indexOf(todo), 1);
+        $scope.history.task.splice($scope.history.task.indexOf(todo), 1);
     };
 });
