@@ -41,10 +41,13 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
     };
 
     $scope.todos.task = [];
+    $scope.$watch('todos.task', function () {
+        todoStorage.put($scope.todos.task);
+        console.log('I put task in Storage');
+    }, true);
 
     $scope.addTask = function() {
         $scope.todos.task.push({textTask:$scope.textTask, done:false});
-        todoStorage.put($scope.todos.task);
         $scope.textTask = '';
         console.log($scope.todos)
     };
@@ -56,11 +59,5 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
     function getYearWeekNum(date) {
          return new Date(date).getWeek() + 53 * (new Date(date).getFullYear());
     }
-//example
-    $scope.items = ["One", "Two", "Three"];
-
-    $scope.sortableOptions = {
-        disabled: true
-    };
 
 });

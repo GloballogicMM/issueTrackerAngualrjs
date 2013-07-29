@@ -47,7 +47,7 @@
 
         <div class="control-group">
             <div class="controls">
-                <ul ui-sortable ng-model="todo.done" class="unstyled" ui-sortable ng-model="todos.task">
+                <ul class="unstyled" ui-sortable ng-model="todos.task">
                     <li ng-repeat="todo in todos.task" >
                         <input type="checkbox" ng-model="todo.done">
                         <span class="done-{{todo.done}}">{{todo.textTask}}</span>

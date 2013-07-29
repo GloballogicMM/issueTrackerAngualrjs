@@ -1,6 +1,7 @@
 todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIndex, todoStorage, users) {
     var storage = todoStorage.get();
     $scope.history = storage.histories[weekIndex][historyIndex];
+    $scope.histor = storage.histories.task[historyIndex];
     $scope.users = users;
     $scope.editing = false;
 
