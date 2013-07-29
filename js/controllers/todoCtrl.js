@@ -1,7 +1,6 @@
 todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users) {
 
     $scope.todos = todoStorage.get();
-    console.log($scope.todos);
     $scope.users = users;
     $scope.editing = false;
 
@@ -27,7 +26,6 @@ todo.controller('todoCtrl', function TodoCtrl($scope, dialog, todoStorage, users
         $scope.todos.histories[index].push({
             title: newTodo,
             desc: $scope.newDesc,
-            date: Date.parse($scope.newDate),
             time: $scope.newTime,
             user: $scope.newUsers,
             status: 0

@@ -4,7 +4,6 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     if (!todoStorage.get().histories || !todoStorage.get().weekNums) {
         todoStorage.put({histories: [], weekNums: []});
     }
-    var historyDragIndex;
 
     $scope.search = {};
     $scope.search.title = "";
@@ -15,8 +14,7 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
     $scope.statuses = ["defined", "inprogress", "complete", "blocked"];
     $scope.temp = {};
     $scope.storage = {};
-
-    var startWeek, endWeek;
+    $scope.data=[[], []];
 
     $scope.refreshHistory = function() {
         var storage = todoStorage.get();
@@ -65,31 +63,31 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
         });
     };
 
-    $scope.openViewDialog = function(historyIndex, weekIndex) {
+    $scope.openViewDialog = function (history, weekIndex) {
         var d = $dialog.dialog({
-            backdrop: false,
-            keyboard: false,
-            backdropClick: false,
-            templateUrl:  'partials/viewById.html',
+            backdrop: true,
+            keyboard: true,
+            backdropClick: true,
+            templateUrl: 'partials/viewById.html',
             controller: 'historyViewCtrl',
             resolve: {
-                historyIndex: function() {
-                    return historyIndex;
+                historyIndex: function () {
+                    return $scope.storage.histories[weekIndex].indexOf(history);
                 },
-                weekIndex: function() {
+                weekIndex: function () {
                     return weekIndex;
                 }
             }
         });
-        d.open().then(function() {
-             $scope.refreshHistory();
+        d.open().then(function () {
+            $scope.refreshHistory();
         });
-    }
+    };
 
     $scope.clearStorage = function() {
         todoStorage.put({histories: [], weekNums: []});
         $scope.refreshHistory();
-    }
+    };
 
     function buildWeekArray() {
         var weekNames = [],
@@ -126,4 +124,22 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
 
         return name;
     }
+
+    var oldWeekIndex;
+    var oldItemIndex;
+
+    $scope.startDrag = function(event, ui) {
+        oldWeekIndex = this.$parent.$index;
+        oldItemIndex = this.$index;
+    };
+
+    $scope.dropItem = function(event, ui) {
+        var newWeekIndex = this.$index;
+
+        $scope.storage.histories[oldWeekIndex].splice(oldItemIndex, 1);
+        todoStorage.put($scope.storage);
+        $scope.refreshHistory();
+    };
 });
+
+

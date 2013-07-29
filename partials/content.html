@@ -22,15 +22,20 @@
     <button class="btn btn-danger" ng-click="clearStorage()" ng-show="!filtering">Clear storage</button>
 </aside>
 <article>
-    <div ng-repeat="week in weekNames">
+    <div class="week" ng-repeat="week in weekNames" ng-model="storage.histories[$index]" data-drop="true"
+         jqyoui-droppable="{multiple: true, onDrop: 'dropItem' }">
         <h4>{{ week }}</h4>
-        <div ng-repeat="item in storage.histories[$index] | historyFilter: search|orderBy: 'status'">
-            <a href="#" ng-click="openViewDialog($index, $parent.$index)"><div class="history {{ statuses[item.status]}}">
+        <div ng-repeat="item in storage.histories[$index] | historyFilter: search | orderBy: 'status'"
+             ng-model="item" data-drag="true"
+             jqyoui-draggable="{index: {{ $index }}, animate: true, onStart:'startDrag'}"
+             data-jqyoui-options="{revert: 'invalid'}">
+            <a href="#" ng-dblclick="openViewDialog(item, $parent.$index)"><div class="history {{ statuses[item.status]}}">
                 <h4>{{ item.title }}</h4>
                 <span class='estimate'>{{ item.time }}h</span>
                 <p>{{ users[item.user[0]].name }} ... </p>
             </div></a>
         </div>
+        <div style="clear: left;display:none"></div>
     </div>
-    <div class="history new btn" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
 </article>
+<div class="history new btn clearfix" ng-show="!filtering" ng-click="openNewDialog()"><span class="plus">+</span></div>
