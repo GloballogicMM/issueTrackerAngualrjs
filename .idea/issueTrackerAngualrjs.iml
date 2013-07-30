@@ -5,10 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="date.js" level="project" />
-    <orderEntry type="library" name="date.js" level="application" />
-    <orderEntry type="library" name="dialog.js" level="application" />
-    <orderEntry type="library" name="jquery-1.9.1" level="application" />
-    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="JasmineAdapter.js" level="application" />
   </component>
 </module>
 

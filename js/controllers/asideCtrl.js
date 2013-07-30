@@ -146,9 +146,21 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
         $scope.storage.histories[newWeekIndex].sort(function(first, second) {
             return first.status - second.status;
         });
+
+        clearEmptyHistory(oldWeekIndex);
+
         todoStorage.put($scope.storage);
         $scope.refreshHistory();
     };
+
+    function clearEmptyHistory(weekIndex) {
+        if ($scope.storage.histories[weekIndex].length === 0) {
+            if (confirm("Do you want to delete empty week?")){
+                $scope.storage.histories.splice(weekIndex, 1);
+                $scope.storage.weekNums.splice(weekIndex, 1);
+            }
+        }
+    }
 });
 
 
