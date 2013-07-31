@@ -1,4 +1,5 @@
 describe('History filter', function() {
+
     beforeEach(angular.mock.module('todo'));
 
     it('should be defined', inject(function($filter) {
