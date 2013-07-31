@@ -147,13 +147,13 @@ todo.controller("asideCtrl", function asideCtrl($scope, $dialog, todoStorage, us
             return first.status - second.status;
         });
 
-        clearEmptyHistory(oldWeekIndex);
+        $scope.clearEmptyHistory(oldWeekIndex);
 
         todoStorage.put($scope.storage);
         $scope.refreshHistory();
     };
 
-    function clearEmptyHistory(weekIndex) {
+    $scope.clearEmptyHistory = function(weekIndex) {
         if ($scope.storage.histories[weekIndex].length === 0) {
             if (confirm("Do you want to delete empty week?")){
                 $scope.storage.histories.splice(weekIndex, 1);
