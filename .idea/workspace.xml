@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64c857f-d999-4877-94e6-18c0bc622246" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/HistoryAddDialogSpec.js" afterPath="$PROJECT_DIR$/spec/HistoryAddDialogSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="issueTrackerAngualrjs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375257689832" ignored="false" />
+    <file path="/Dummy.txt" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375271881584" ignored="false" />
     <file path="/index.html" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374758666947" ignored="false" />
     <file path="/todoStorage.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1374488329081" ignored="false" />
     <file path="/todoCtrl.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375107654181" ignored="false" />
@@ -37,6 +37,7 @@
     <file path="/HistoryAddSpec.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375196005798" ignored="false" />
     <file path="/ScrumBoardSpec.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375196197019" ignored="false" />
     <file path="/Player.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375196256245" ignored="false" />
+    <file path="/HistoryAddDialogSpec.js" changelist="e64c857f-d999-4877-94e6-18c0bc622246" time="1375278234866" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,25 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="todoCtrl.js" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="23" column="31" selection-start="819" selection-end="829" vertical-scroll-proportion="0.47449768">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="issueTrackerAngualrjs" />
@@ -59,16 +79,7 @@
       <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todoCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="55" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+            <state line="40" column="0" selection-start="1997" selection-end="1997" vertical-scroll-proportion="-17.461538">
               <folding />
             </state>
           </provider>
@@ -77,7 +88,7 @@
       <file leaf-file-name="historyViewCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/historyViewCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="32" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
+            <state line="12" column="45" selection-start="338" selection-end="567" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,17 +97,19 @@
       <file leaf-file-name="viewById.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/viewById.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="3920" selection-end="3920" vertical-scroll-proportion="0.0">
+            <state line="98" column="0" selection-start="3920" selection-end="3920" vertical-scroll-proportion="-13.923077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecRunner.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SpecRunner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpecRunner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="10" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.3656805">
-              <folding />
+            <state line="33" column="32" selection-start="1835" selection-end="1835" vertical-scroll-proportion="-15.692307">
+              <folding>
+                <element signature="tag#script#19;tag#head#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,17 +117,35 @@
       <file leaf-file-name="ScrumBoardSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/ScrumBoardSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="97" selection-end="210" vertical-scroll-proportion="0.0">
+            <state line="22" column="0" selection-start="97" selection-end="137" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecHelper.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/SpecHelper.js">
+      <file leaf-file-name="DialogSpec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/DialogSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="23" column="33" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1375271755476" expanded="true" signature="511:3362" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="601:3334" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="642:1035" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="760:1011" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="900:983" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="1094:1373" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="1226:1349" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="1432:1701" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="1557:1673" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="1764:2340" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="1897:2308" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="2173:2272" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="2407:2941" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="2550:2909" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="2707:2873" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="3024:3272" placeholder="..." />
+                <marker date="1375271755476" expanded="true" signature="3076:3240" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,19 +159,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/Player.js">
+      <file leaf-file-name="HistoryAddDialogSpec.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/HistoryAddDialogSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+            <state line="60" column="61" selection-start="1902" selection-end="1902" vertical-scroll-proportion="0.79881656">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HistoryAddDialogSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/HistoryAddDialogSpec.js">
+      <file leaf-file-name="HistoryFilterSpec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/HistoryFilterSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/validate.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/partials/createContent.html" />
         <option value="$PROJECT_DIR$/js/controllers/historyViewCtrl.js" />
@@ -182,15 +212,15 @@
         <option value="$PROJECT_DIR$/spec/HistoryViewEditDialogSpec.js" />
         <option value="$PROJECT_DIR$/spec/Player.js" />
         <option value="$PROJECT_DIR$/SpecRunner.html" />
+        <option value="$PROJECT_DIR$/spec/HistoryAddDialogSpec.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="62" />
+    <option name="width" value="652" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -218,6 +248,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,9 +281,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issueTrackerAngualrjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,17 +322,6 @@
     <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/testing" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-  </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="9f3c938b-cea7-429e-9b73-c4ad21cd6a00">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -282,21 +333,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -511,13 +547,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="62" y="0" width="652" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1764706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19451766" sideWeight="0.8235294" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4220339" sideWeight="0.8235294" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -526,7 +563,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -561,7 +597,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -619,7 +655,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/spec/HistoryAddDialogSpec.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/spec/HistoryAddDialogSpec.js</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -653,51 +701,9 @@
         <state line="5" column="45" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/historyViewCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="32" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/viewById.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="3920" selection-end="3920" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/HistoryAddDialogSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/SpecHelper.js">
+    <entry file="file://$PROJECT_DIR$/spec/HistoryFilterSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/ScrumBoardSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="97" selection-end="210" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -709,16 +715,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/Player.js">
+    <entry file="file://$PROJECT_DIR$/spec/ScrumBoardSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="97" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/viewById.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="3920" selection-end="3920" vertical-scroll-proportion="-13.923077">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.3656805">
+        <state line="33" column="32" selection-start="1835" selection-end="1835" vertical-scroll-proportion="-15.692307">
+          <folding>
+            <element signature="tag#script#19;tag#head#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/historyViewCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="338" selection-end="567" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1997" selection-end="1997" vertical-scroll-proportion="-17.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/DialogSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="33" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1375271755476" expanded="true" signature="511:3362" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="601:3334" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="642:1035" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="760:1011" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="900:983" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="1094:1373" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="1226:1349" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="1432:1701" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="1557:1673" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="1764:2340" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="1897:2308" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="2173:2272" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="2407:2941" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="2550:2909" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="2707:2873" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="3024:3272" placeholder="..." />
+            <marker date="1375271755476" expanded="true" signature="3076:3240" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/todoCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="31" selection-start="819" selection-end="829" vertical-scroll-proportion="0.47449768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/HistoryAddDialogSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="61" selection-start="1902" selection-end="1902" vertical-scroll-proportion="0.79881656">
           <folding />
         </state>
       </provider>
