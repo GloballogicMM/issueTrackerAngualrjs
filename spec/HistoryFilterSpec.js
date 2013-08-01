@@ -1,6 +1,6 @@
 describe('History filter', function() {
     var historyFilter;
-    beforeEach(angular.mock.module('todo'));
+    beforeEach(module('todo'));
     beforeEach(inject(function($filter) {
         historyFilter = $filter('historyFilter');
     }));

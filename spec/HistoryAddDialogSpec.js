@@ -1,4 +1,4 @@
-describe("testting Todo controller", function(){
+describe("History add dialog", function(){
     //module and inject - in angular-mocks.js
     //load module before load
     beforeEach(module('todo'));

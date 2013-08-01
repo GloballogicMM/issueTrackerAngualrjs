@@ -1,6 +1,6 @@
 todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIndex, todoStorage, users) {
-    var storage = todoStorage.get();
-    $scope.history = storage.histories[weekIndex][historyIndex];
+    $scope.storage = todoStorage.get();
+    $scope.history = $scope.storage.histories[weekIndex][historyIndex];
     $scope.users = users;
     $scope.editing = false;
 
@@ -22,10 +22,10 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
         $scope.history.user = $scope.newUsers;
         $scope.history.status = $scope.newStatus;
         $scope.history.time = $scope.newTime;
-        storage.histories[weekIndex].sort(function(first, second) {
+        $scope.storage.histories[weekIndex].sort(function(first, second) {
             return first.status - second.status;
         });
-        todoStorage.put(storage);}
+        todoStorage.put($scope.storage);}
         $scope.editing = false;
     };
 
@@ -34,12 +34,12 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
     };
 
     $scope.removeTodo = function () {
-        storage.histories[weekIndex].splice(historyIndex, 1);
-        if (storage.histories[weekIndex].length === 0) {
-            storage.histories.splice(weekIndex, 1);
-            storage.weekNums.splice(weekIndex, 1);
+        $scope.storage.histories[weekIndex].splice(historyIndex, 1);
+        if ($scope.storage.histories[weekIndex].length === 0) {
+            $scope.storage.histories.splice(weekIndex, 1);
+            $scope.storage.weekNums.splice(weekIndex, 1);
         }
-        todoStorage.put(storage);
+        todoStorage.put($scope.storage);
         $scope.editing = false;
         $scope.close();
     };
@@ -49,7 +49,7 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
     };
 
    function updateTasks() {
-        todoStorage.put(storage);
+        todoStorage.put($scope.storage);
     }
 
     $scope.sortableOptions = {
@@ -66,6 +66,6 @@ todo.controller("historyViewCtrl", function($scope, dialog, historyIndex, weekIn
 
     $scope.removeTask= function (todo) {
         $scope.history.task.splice($scope.history.task.indexOf(todo), 1);
-        todoStorage.put(storage);
+        todoStorage.put($scope.storage);
     };
 });

@@ -13,8 +13,6 @@ describe("Scrum board", function() {
         scope = $rootScope.$new();
         controller = $controller('asideCtrl', {
             $scope: scope
-//            $dialog: $dialog,
-//            todoStorage: todoStorage
         });
     }));
 
