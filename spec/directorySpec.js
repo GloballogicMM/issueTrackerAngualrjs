@@ -9,7 +9,6 @@ describe('test direcories', function(){
         }]
     ));
 
-
     //Enother exaple declaring variables in directives testing
     /*
     beforeEach(inject(function(_$compile_, _$rootScope_){
@@ -28,4 +27,9 @@ describe('test direcories', function(){
         var element = $compile("<asidemy></asidemy>")($rootScope);
         expect(element.html()).toBeDefined();
     }));
+
+    it ('should have load multiselect', function(){
+       var element = $compile('<select class="multiselect"></select> ')($rootScope);
+        expect(element.html()).toBeDefined();
+    });
 });
